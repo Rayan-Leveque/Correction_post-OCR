@@ -1,0 +1,14 @@
+<line>Une dernière remarque porte sur la forme du produit principal de l'assemblage, le programme objet.
+Nous devons distinguer plusieurs cas :</line>
+
+<line>- si la machine est très petite, dépourvue de mémoire auxiliaire, et ne peut recevoir qu'un programme à la fois, ce produit est un programme binaire conçu pour travailler à une place définie de la mémoire. Il est en général sur bande perforée ou cartes, et son introduction en mémoire nécessitera le recours à un très petit programme de service, le charcour absolu.</line>
+<line>- si la machine est plus importante, le programme objet sera en général placé par l'assembleur sur une mémoire auxiliaire, en attendant l'heure d'être exécuté. On ignore, au moment de l'assemblage, la zone de mémoire principale où sera placé le programme pour cette exécution.</line>
+<line>Le programme objet binaire est alors conservé dans une forme spéciale dite relcagable parce que le charcour qui le prendra en compte pourra le placer n'importe où. Mais ce "hargeur, capable d'effectuer la translation des adresses et autorisant des corrections, devient un programme important, dont nous : carlerons.</line>
+<line>Cependant, le langage d'assemblage ainsi défini reste isomorphe du langage machine ; pour aller plus loin, il faut parler de sous-programmes et d'interprétation.</line>
+<line># Sous-programmes </line>
+<line>Il est fréquent qu'une séquence d'instructions, écrite pour un besoin particulier A au cours d'un programme, s'avère utilisable en d'autres parties du travail B, C. Cela constitue un sous-programme, et on peut envisager plusieurs façons de s'en servir.</line>
+<line>a) ou bien cette séquence A est recopiée dans le texte du programme aux places $B$ et $C$, et l'économie réalisée porte sur le temps de rédaction, c'est un sous-programme ouvert.</line>
+<line>b) ou bien la séquence A n'est écrite qu'une fois, et logée une fois en mémoire, afin de faire des économies de place. Dans ce cas, le sousprogramme, st dit fermé, et il faut y renvoyer par unerupture de séquence. A la fin de la séquence A, le sous-programme doit renvoyer au programme principal, et cela pose des problèmes délicats qui ont reçu plusieurs solutions intéressantes de caractère universel, dont au moins une est toujours incorporée au répertoire de chaque calculateur.</line>
+
+<line>Un programme doit en général passer des paramètres à un sousprogramme fermé qu'il appelle. Ce problème général a également fait l'objet de solutions multiples.</line>
+<line>Les assembleurs incorporent tous, depuis leur invention, les moyens d'appeler des sous-programmes fermés. Il y a à cela deux raisons :</line>

@@ -1,0 +1,16 @@
+<line># Introduction 
+
+Un calculateur est un assemblage technolog:que très remarqua:te, mais il est, comme tout autre 'équipement, absolument sans valeur sans un mode d'emploi. Lorsqu'on essaie de préciser ce mode, au niveau qui convient d'habitudó pour d'autres machines, (boutons, lampes témoins, manettes) on s'aperçoit que la description la plus minutieuse est impuissante à pernetire une mise en oeuvre efficace du plus modeste calculateur. Et cela pour uis raison bien simple, c'est que le travail utile du calculateur résulte d'ordres</line>
+
+<line>- qui s'éxécutent à vitesse électronique, mais</line>
+<line>- qui ont da pour cela être intrc'ults dans un dispositif spécial de la machina, la mémoire de programme, et</line>
+<line>- qui sont malheureusement rédigés, dans cette mémoire, sous une forma particulièrement ésotérique.</line>
+
+<line>De plus, si nous partons d'une machine absolument vide, l'intro-duction deces ordres, supposés rédigés, dans la machine, est une opération extrêmement longue et fastidieuse, qu'il est pratiquement impossible d'enécuter sans des dixaines d'erreurs.</line>
+<line>Si nous analysons plus finement la suite de ces ordres, qui c'nstitue le programme, nous constatons de plus que chacun d'eux, mêra dans les machines les plus élaborées, n'exécute qu'une action très élémentaire, de sorte que toute activité significative exige l', icution d'un grand nombre de ces ordres. C'est pourquoi, presque dès l'orị̧ine du calcul automatique, il est apparu nécessaire de compléter la machine, le hardware pour employer le. langage familier des américains, par une cécle de programes écrits par des spéc11 listes, grâce auxquels la mise en oeuvre deviendra plus aisée.</line>
+
+<line>Moyennant ces programnes, qui constituent le "software", par une astuce de langage dont aucun bon équivalent français n'a encore été trouvé, l'utilisateur moyen, peu soucieux de la structure interne de son équipement, est néc. : : en mesure de lui faire exécuter des tâches extrêmement complexes qu'il lui définit en quelques mots simples.</line>
+<line>Nous aurons à distinguer deux sortes de software :</line>
+
+<line>1) le software de base, à l'aide duquel on fait disparaître, pour l'usager les incomodités naturelles de l'équipement. Nantie de son software de base, la machine eccepte ses ordres élémentaires sous une forme directement compréhensible à l'home, et la procédure d'introduction du programme dans la mémoire devient aisée sinon naturelle. Les résultats qu'elle délivre $i$... de même convenablement présentés, et rédigér an langage clair. Enfin, l'exécution du travail est organisée de manière à réduire les temps morts, qui équivalent à des pertes d'argent.</line>
+<line>2) le software d'application, spécialement conçu pour faciliter plus particulièrement tel - tel usage de la machine, en dispensant l'exploitant de réfléchir à la méthode de résolution des, problèmes de routine, propres à cette application, pour se concentrer sur les cas particuliers.</line>

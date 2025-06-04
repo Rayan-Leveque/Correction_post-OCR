@@ -1,0 +1,8 @@
+model,Negative Improvement,No Improvement,Positive Improvement
+DeepSeek v3 Turbo,1715,304,2299
+GPT-3.5 Turbo,1983,203,2133
+GPT-4.1,1279,336,2703
+GPT-4.1 Mini,1060,402,2857
+Google Gemma 3 27B IT,1693,325,2301
+Llama-4-Maverick-17b,2475,94,1748
+Llama-4-Scout-17b,3946,53,319

@@ -1,0 +1,801 @@
+,filename,language,dataset_name,ocr.line,ocr.sentence,groundtruth.line,groundtruth.sentence,prediction.line,model,prompt,prompt_text,file,name_of_file_idx,prediction.line.postprocessed,post-processings,line-lev-ocr,line-lev-pred,line-lev-improvement,quality-band-line,line-lev-pred-postprocessed,line-lev-improvement-postprocessed,overall-levenshtein-improvement,overall-levenshtein-improvement-postprocessed,overall-lev-ocr,improvement-band
+0,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3020.txt,fr,AN-lines,"Une dernière remarque porte sur la forme du produit principal de l'assemblage, le programme objet.
+Nous devons distinguer plusieurs cas :",No text,"Une dernière remarque porte sur la forme du produit principal de l'assemblage, le programme objet. 
+Nous devons distinguer plusieurs cas :",No text,"Voici le texte corrigé :
+
+""Une dernière remarque porte sur la forme du produit principal de l'assemblage, le programme objet.
+Nous devons distinguer plusieurs cas :""
+
+J'ai corrigé les erreurs suivantes :
+
+- ""secetariar"" -> ""sécrétariat"" n'était pas présent mais ""générame"" -> ""général""
+- ""cnoseil"" -> ""conseil""
+- ""resopnsbile"" -> ""responsable""
+- ""poru"" -> ""pour""
+- Aucune autre erreur n'a été constatée. 
+
+Le texte est maintenant exempt d'erreurs d'OCR et conserve son organisation et son sens d'origine.",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_0,"Voici le texte corrigé :
+
+""Une dernière remarque porte sur la forme du produit principal de l'assemblage, le programme objet.
+Nous devons distinguer plusieurs cas :""
+
+J'ai corrigé les erreurs suivantes :",PRED-TEXT-TRUNCATED|,0.9927536231884058,0.2698412698412698,-0.7281890858533195,99-100%,0.6699507389162561,-0.3251591097047931,-0.7281890858533195,-0.3251591097047931,0.9927536231884058,Negative Improvement
+1,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3020.txt,fr,AN-lines,"- si la machine est très petite, dépourvue de mémoire auxiliaire, et ne peut recevoir qu'un programme à la fois, ce produit est un programme binaire conçu pour travailler à une place définie de la mémoire. Il est en général sur bande perforée ou cartes, et son introduction en mémoire nécessitera le recours à un très petit programme de service, le charcour absolu.",No text,"- si la machine est très petite, dépourvue de mémoire auxiliaire, et ne peut recevoir qu'un programme à la fois, ce produit est un programme binaire conçu pour travailler à une place définie de la mémoire. Il est en général sur bande perforée ou cartes, et son introduction en mémoire nécessitera le recours à un très petit programme de service, le chargeur absolu.",No text,"Voici le texte corrigé :
+
+""Si la machine est très petite, dépourvue de mémoire auxiliaire, et ne peut recevoir qu'un programme à la fois, ce produit est un programme binaire conçu pour travailler à une place définie de la mémoire. Il est en général sur bande perforée ou cartes, et son introduction en mémoire nécessitera le recours à un très petit programme de service, le chargement absolu.""
+
+J'ai corrigé les erreurs suivantes :
+
+- ""cnoseil"" -> ""conseil""
+- ""q'ètait"" -> ""était"" (mais ""que"" est souvent mal lu par les OCR, je n'ai pas modifié cette partie)
+- ""resopnsbile"" -> ""responsable""
+- ""poru"" -> ""pour""
+- ""charcour"" -> ""chargement"" ou ""charcour"" semble être un mot peu clair, mais ""absolu"" semble cohérent avec ""chargement absolu""
+- J'ai supposé que ""binaire"" et ""perforée"" ou ""perforé"" était bien écrit, mais que ""charcour"" devait être ""chargement"" 
+
+Voici le résultat.",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_1,"Voici le texte corrigé :
+
+""Si la machine est très petite, dépourvue de mémoire auxiliaire, et ne peut recevoir qu'un programme à la fois, ce produit est un programme binaire conçu pour travailler à une place définie de la mémoire. Il est en général sur bande perforée ou cartes, et son introduction en mémoire nécessitera le recours à un très petit programme de service, le chargement absolu.""
+
+J'ai corrigé les erreurs suivantes :
+
+- ""cnoseil"" -> ""conseil""
+- ""q'ètait"" -> ""était"" (mais ""que"" est souvent mal lu par les OCR, je n'ai pas modifié ce",PRED-TEXT-TRUNCATED|,0.9945205479452055,0.4134396355353075,-0.5842824601366743,99-100%,0.659963436928702,-0.33640040088436307,-0.5842824601366743,-0.33640040088436307,0.9945205479452055,Negative Improvement
+2,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3020.txt,fr,AN-lines,"- si la machine est plus importante, le programme objet sera en général placé par l'assembleur sur une mémoire auxiliaire, en attendant l'heure d'être exécuté. On ignore, au moment de l'assemblage, la zone de mémoire principale où sera placé le programme pour cette exécution.",No text,"- si la machine est plus importante, le programme objet sera en général placé par l'assembleur sur une mémoire auxiliaire, en attendant l'heure d'être exécuté. On ignore, au moment de l'assemblage, la zone de mémoire principale où sera placé le programme pour cette exécution.",No text,"Voici le texte corrigé :
+
+""Si la machine est plus importante, le programme objet sera en général placé par l'assembleur sur une mémoire auxiliaire, en attendant l'heure d'être exécuté. On ignore, au moment de l'assemblage, la zone de mémoire principale où sera placé le programme pour cette exécution.""
+
+J'ai corrigé les erreurs suivantes :
+
+* ""objet"" était correctement orthographié, mais j'ai vérifié que les autres mots étaient bien orthographiés.
+* ""cnoseil"" n'était pas présent dans le texte, mais j'ai vérifié que ""conseil"" était bien orthographié.
+* ""resopnsbile"" a été corrigé en ""responsable"".
+* ""poru"" a été corrigé en ""pour"".
+* ""q'ètait"" a été corrigé en ""était"" mais il semble que ce soit plutôt ""le"" qui était demandé : ""le programme"" et non ""q'ètait"".
+
+
+Voici donc le texte final corrigé :
+
+""Si la machine est plus importante, le programme objet sera en général placé par l'assembleur sur une mémoire auxiliaire, en attendant l'heure d'être exécuté. On ignore, au moment de l'assemblage, la zone de mémoire principale où sera placé le programme pour cette exécution.""",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_2,"Voici le texte corrigé :
+
+""Si la machine est plus importante, le programme objet sera en général placé par l'assembleur sur une mémoire auxiliaire, en attendant l'heure d'être exécuté. On ignore, au moment de l'assemblage, la zone de mémoire principale où sera placé le programme pour cette exécution.""
+
+J'ai corrigé les erreurs suivantes :
+
+* ""objet"" était correctement orthographié, mais j'ai vérifié que les aut",PRED-TEXT-TRUNCATED|,1.0,0.2543940795559667,-0.7456059204440333,99-100%,0.6618357487922706,-0.3381642512077294,-0.7456059204440333,-0.3381642512077294,1.0,Negative Improvement
+3,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3020.txt,fr,AN-lines,"Le programme objet binaire est alors conservé dans une forme spéciale dite relcagable parce que le charcour qui le prendra en compte pourra le placer n'importe où. Mais ce ""hargeur, capable d'effectuer la translation des adresses et autorisant des corrections, devient un programme important, dont nous : carlerons.",No text,"Le programme objet binaire est alors conservé dans une forme spéciale dite relogeable parce que le chargeur qui le prendra en compte pourra le placer n'importe où. Mais ce chargeur, capable d'effectuer la translation des adresses et autorisant des corrections, devient un programme important, dont nous parlerons.",No text,"Voici le texte corrigé :
+
+Le programme objet binaire est alors conservé dans une forme spéciale dite ""relocatable"" parce que le chargeur qui le prendra en compte pourra le placer n'importe où. Mais ce chargeur, capable d'effectuer la translation des adresses et autorisant des corrections, devient un programme important, dont nous parlerons.",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_3,"Voici le texte corrigé :
+
+Le programme objet binaire est alors conservé dans une forme spéciale dite ""relocatable"" parce que le chargeur qui le prendra en compte pourra le placer n'importe où. Mais ce chargeur, capable d'effectuer la translation des adresses et autorisant des corrections, devient un programme important, dont nous parlerons.",NONE,0.9714285714285714,0.9093567251461988,-0.06389748882008946,80-99%,0.9093567251461988,-0.06389748882008946,-0.06389748882008946,-0.06389748882008946,0.9714285714285714,Negative Improvement
+4,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3020.txt,fr,AN-lines,"Cependant, le langage d'assemblage ainsi défini reste isomorphe du langage machine ; pour aller plus loin, il faut parler de sous-programmes et d'interprétation.",No text,"Cependant, le langage d'assemblage ainsi défini reste isomorphe du langage machine ; pour aller plus loin, il faut parler de sous-programmes et d'interprétation.",No text,"Le texte fourni est déjà correct :
+
+"" Cependant, le langage d'assemblage ainsi défini reste isomorphe du langage machine ; pour aller plus loin, il faut parler de sous-programmes et d'interprétation. "" 
+
+Il ne nécessite donc aucune correction. Le texte est bien transcrit et ne comporte aucune erreur due à l'OCR.",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_4,"Le texte fourni est déjà correct :
+
+"" Cependant, le langage d'assemblage ainsi défini reste isomorphe du langage machine ; pour aller plus loin, il faut parler de sous-programmes et d'interprétation. "" 
+
+Il ne nécessite donc aucune correctio",PRED-TEXT-TRUNCATED|,1.0,0.5143769968051118,-0.48562300319488816,99-100%,0.6680497925311203,-0.3319502074688797,-0.48562300319488816,-0.3319502074688797,1.0,Negative Improvement
+5,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3020.txt,fr,AN-lines,# Sous-programmes,No text,Sous-programmes,No text,"Je suis prêt à t'aider. Quel est le texte que tu souhaites que je corrige ? 
+
+Je vais retranscrire le texte correctement en corrigeant les erreurs d'OCR. 
+
+Veuillez fournir le texte à corriger.",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_5,Je suis prêt à t'aider. Q,PRED-TEXT-TRUNCATED|,0.8823529411764706,0.05699481865284974,-0.935405872193437,80-99%,0.24,-0.728,-0.935405872193437,-0.728,0.8823529411764706,Negative Improvement
+6,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3020.txt,fr,AN-lines,"Il est fréquent qu'une séquence d'instructions, écrite pour un besoin particulier A au cours d'un programme, s'avère utilisable en d'autres parties du travail B, C. Cela constitue un sous-programme, et on peut envisager plusieurs façons de s'en servir.",No text,"Il est fréquent qu'une séquence d'instructions, écrite pour un besoin particulier A au cours d'un programme, s'avère utilisable en d'autres parties du travail B, C. Cela constitue un sous-programme, et on peut envisager plusieurs façons de s'en servir.",No text,"Il est fréquent qu'une séquence d'instructions, écrite pour un besoin particulier A au cours d'un programme, s'avère utilisable en d'autres parties du travail B, C. Cela constitue un sous-programme, et on peut envisager plusieurs façons de s'en servir.",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_6,"Il est fréquent qu'une séquence d'instructions, écrite pour un besoin particulier A au cours d'un programme, s'avère utilisable en d'autres parties du travail B, C. Cela constitue un sous-programme, et on peut envisager plusieurs façons de s'en servir.",NONE,1.0,1.0,0.0,99-100%,1.0,0.0,0.0,0.0,1.0,No Improvement
+7,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3020.txt,fr,AN-lines,"a) ou bien cette séquence A est recopiée dans le texte du programme aux places $B$ et $C$, et l'économie réalisée porte sur le temps de rédaction, c'est un sous-programme ouvert.",No text,"a) ou bien cette séquence A est recopiée dans le texte du programme aux places B et C, et l'économie réalisée porte sur le temps de rédaction, c'est un sous-programme ouvert.",No text,"Le texte fourni semble déjà correct. Cependant, je vais le relire attentivement pour m'assurer qu'il n'y a pas d'erreurs d'OCR :
+
+""a) ou bien cette séquence A est recopiée dans le texte du programme aux places $B$ et $C$, et l'économie réalisée porte sur le temps de rédaction, c'est un sous-programme ouvert.""
+
+Le texte me semble correct, je ne vois pas d'erreurs d'OCR évidentes. Voici donc le texte transcrit sans erreurs :
+
+""a) ou bien cette séquence A est recopiée dans le texte du programme aux places $B$ et $C$, et l'économie réalisée porte sur le temps de rédaction, c'est un sous-programme ouvert.""",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_7,"Le texte fourni semble déjà correct. Cependant, je vais le relire attentivement pour m'assurer qu'il n'y a pas d'erreurs d'OCR :
+
+""a) ou bien cette séquence A est recopiée dans le texte du programme aux places $B$ et $C$, et l'économie réalisée porte sur le temps de",PRED-TEXT-TRUNCATED|,0.9775280898876404,0.28618421052631576,-0.7072368421052633,80-99%,0.3308270676691729,-0.6615677123844093,-0.7072368421052633,-0.6615677123844093,0.9775280898876404,Negative Improvement
+8,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3020.txt,fr,AN-lines,"b) ou bien la séquence A n'est écrite qu'une fois, et logée une fois en mémoire, afin de faire des économies de place. Dans ce cas, le sousprogramme, st dit fermé, et il faut y renvoyer par unerupture de séquence. A la fin de la séquence A, le sous-programme doit renvoyer au programme principal, et cela pose des problèmes délicats qui ont reçu plusieurs solutions intéressantes de caractère universel, dont au moins une est toujours incorporée au répertoire de chaque calculateur.",No text,"b) ou bien la séquence A n'est écrite qu'une fois, et logée une fois en mémoire, afin de faire des économies de place. Dans ce cas, le sous-programme est dit fermé, et il faut y renvoyer par une rupture de séquence. À la fin de la séquence A, le sous-programme doit renvoyer au programme principal, et cela pose des problèmes délicats qui ont reçu plusieurs solutions intéressantes de caractère universel, dont au moins une est toujours incorporée au répertoire de chaque calculateur.",No text,"Voici le texte corrigé :
+
+b) ou bien la séquence A n'est écrite qu'une fois, et logée une fois en mémoire, afin de faire des économies de place. Dans ce cas, le sous-programme, est dit fermé, et il faut y renvoyer par une rupture de séquence. A la fin de la séquence A, le sous-programme doit renvoyer au programme principal, et cela pose des problèmes délicats qui ont reçu plusieurs solutions intéressantes de caractère universel, dont au moins une est toujours incorporée au répertoire de chaque calculateur.
+
+J'ai corrigé les erreurs suivantes :
+
+* ""st"" -> ""est""
+* ""unerupture"" -> ""une rupture""
+* ""q'ètait"" n'était pas présent dans le texte, mais ""resopnsbile"" a été corrigé en ""responsable"" n'était pas non plus présent, j'ai donc laissé ""dit"" 
+* ""cnoseil"" n'était pas présent, mais ""poru"" a été corrigé en ""pour"" 
+* ""rn"" n'était pas présent mais ""logée"" et ""renvoyer"" ont été conservés 
+* Aucune erreur de ""...."" ou de rajout de mots ou de phrases n'a été constatée 
+
+Le texte a été corrigé en respectant les règles fournies.",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_8,"Voici le texte corrigé :
+
+b) ou bien la séquence A n'est écrite qu'une fois, et logée une fois en mémoire, afin de faire des économies de place. Dans ce cas, le sous-programme, est dit fermé, et il faut y renvoyer par une rupture de séquence. A la fin de la séquence A, le sous-programme doit renvoyer au programme principal, et cela pose des problèmes délicats qui ont reçu plusieurs solutions intéressantes de caractère universel, dont au moins une est toujours incorporée au répertoire de chaque calculateur.
+
+J'ai corrigé les erreurs suivantes :
+
+* ""st"" -> ""est""
+* ""unerupture"" -> ""une rupture""
+* ""q'ètait"" n'était pas présent dans le texte, mais ""resopnsbile"" a été corrigé en ""responsable"" n'était pas non plus présen",PRED-TEXT-TRUNCATED|,0.9896694214876033,0.4684772065955383,-0.5266326346717316,80-99%,0.6680497925311203,-0.3249768275885966,-0.5266326346717316,-0.3249768275885966,0.9896694214876033,Negative Improvement
+9,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3020.txt,fr,AN-lines,Un programme doit en général passer des paramètres à un sousprogramme fermé qu'il appelle. Ce problème général a également fait l'objet de solutions multiples.,No text,Un programme doit en général passer des paramètres à un sous-programme fermé qu'il appelle. Ce problème général a également fait l'objet de solutions multiples.,No text,"Voici le texte corrigé :
+
+Un programme doit en général passer des paramètres à un sous-programme fermé qu'il appelle. Ce problème général a également fait l'objet de solutions multiples.
+
+J'ai vérifié le texte et effectué les corrections nécessaires pour obtenir un résultat coherent et proche du texte d'origine. Les erreurs d'OCR ont été rectifiées pour obtenir un texte fluide et compréhensible.",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_9,"Voici le texte corrigé :
+
+Un programme doit en général passer des paramètres à un sous-programme fermé qu'il appelle. Ce problème général a également fait l'objet de solutions multiples.
+
+J'ai vérifié le texte et effectué les corrections",PRED-TEXT-TRUNCATED|,0.99375,0.4020100502512563,-0.5954615846528238,99-100%,0.6751054852320675,-0.3206485683199321,-0.5954615846528238,-0.3206485683199321,0.99375,Negative Improvement
+10,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3020.txt,fr,AN-lines,"Les assembleurs incorporent tous, depuis leur invention, les moyens d'appeler des sous-programmes fermés. Il y a à cela deux raisons :",No text,"Les assembleurs incorporent tous, depuis leur invention, les moyens d'appeler des sous-programmes fermés. Il y a à cela deux raisons :",No text,"Voici le texte corrigé :
+
+""Les assembleurs incorporent tous, depuis leur invention, les moyens d'appeler des sous-programmes fermés. Il y a à cela deux raisons :""
+
+J'ai corrigé les erreurs suivantes :
+
+* ""assembleurs"" est remplacé par ""assembleurs"" (mais cela pourrait être un choix de variante, assemblez assembleurs ???)
+* ""générame"" -> ""général"" 
+* ""q'ètait"" -> ""étaient"" ou  ""que"" "" étaient"" 
+* ""resopnsbile"" -> ""responsable"" 
+* ""poru"" -> ""pour"" 
+* ""cnoseil"" -> ""conseil"" 
+* ""secetariar"" -> ""secrétariat"" 
+* ""fermés""  semble correct 
+* ""depuis leur invention"" pour conserver le sens 
+
+Mais je pense que assembleur est un mot connu et utilisé dans le domaine informatique il garde  donc  assembleur .",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_10,"Voici le texte corrigé :
+
+""Les assembleurs incorporent tous, depuis leur invention, les moyens d'appeler des sous-programmes fermés. Il y a à cela deux raisons :""
+
+J'ai corrigé les erreurs suivantes :",PRED-TEXT-TRUNCATED|,1.0,0.1906116642958748,-0.8093883357041252,99-100%,0.67,-0.32999999999999996,-0.8093883357041252,-0.32999999999999996,1.0,Negative Improvement
+11,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3018.txt,fr,AN-lines,"- les complitteurs, programmes permettant d'énoncer les problèmes sous une forme indépendante de la structure de la machine.
+- les moniteurs, programmes chargés d'optimiser l'emploi des ressources de la machine (mémoire, bloc de calcul, périphériques) lors de l'exécution de travaux donnés.
+Chacun de ces programmes va faire l'objet d'une analyse un peu plus détaillée.",No text,"- les compilateurs, programmes permettant d'énoncer les problèmes sous une forme indépendante de la structure de la machine.
+- les moniteurs, programmes chargés d'optimiser l'emploi des ressources de la machine (mémoire, bloc de calcul, périphériques) lors de l'exécution de travaux donnés.
+Chacun de ces programmes va faire l'objet d'une analyse un peu plus détaillée.",No text,"Voici le texte corrigé :
+
+""- les compilateurs, programmes permettant d'énoncer les problèmes sous une forme indépendante de la structure de la machine.
+- les moniteurs, programmes chargés d'optimiser l'emploi des ressources de la machine (mémoire, bloc de calcul, périphériques) lors de l'exécution de travaux donnés.
+Chacun de ces programmes va faire l'objet d'une analyse un peu plus détaillée.""
+
+J'ai corrigé les erreurs suivantes :
+- ""complitteurs"" -> ""compilateurs""
+- ""générame"" n'était pas présent dans le texte, mais ""q'ètait"" a été corrigé dans l'exemple donné en ""était"" 
+- ""resopnsbile"" -> n'était pas présent, mais ""poru"" -> ""pour""
+- ""secetariar"" -> n'était pas présent mais ""générame"" -> ""général"" dans une phrase exemple.",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_11,"Voici le texte corrigé :
+
+""- les compilateurs, programmes permettant d'énoncer les problèmes sous une forme indépendante de la structure de la machine.
+- les moniteurs, programmes chargés d'optimiser l'emploi des ressources de la machine (mémoire, bloc de calcul, périphériques) lors de l'exécution de travaux donnés.
+Chacun de ces programmes va faire l'objet d'une analyse un peu plus détaillée.""
+
+J'ai corrigé les erreurs suivantes :
+- ""complitteurs"" -> ""compilateurs""
+- ""générame"" n'était pas présent dans le texte, mais ""q'ètait"" a été corrigé dans",PRED-TEXT-TRUNCATED|,0.991869918699187,0.502724795640327,-0.4931545093134408,99-100%,0.6684782608695652,-0.3260424091233072,-0.4931545093134408,-0.3260424091233072,0.991869918699187,Negative Improvement
+12,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3018.txt,fr,AN-lines,"Langages d'assemblage
+Euns les premiers temps des machines à calculer; les ambitions des créateurs de software (le nom n'éxistait pas alors) étaient très limitées. Soit à écrire un programme $A$, destiné à un travail mathématique. Plutôt que de rédiger en octal chacune des instructions de $A$, puis de les introduire caractère par caractère par un appareil de chargement spécial, on se propose de définir une forme externe des instructions, choisie pour sa commodité, et de confier la traduction à un autre programme B. Pendant l'opération de chargement, B, situé en mémoire, accepte A comme une donnée à travers l'appareil normal d'entrée et produit directement un programme A', binaire, isomorphe de A et placé en mémoire pour exécution.",No text,"Langages d'assemblage  
+Dans les premiers temps des machines à calculer; les ambitions des créateurs de software (le nom n'existait pas alors) étaient très limitées. Soit à écrire un programme A, destiné à un travail mathématique. Plutôt que de rédiger en octal chacune des instructions de A, puis de les introduire caractère par caractère par un appareil de chargement spécial, on se propose de définir une forme externe des instructions, choisie pour sa commodité, et de confier la traduction à un autre programme B. Pendant l'opération de chargement, B, situé en mémoire, accepte A comme une donnée à travers l'appareil normal d'entrée et produit directement un programme A', binaire, isomorphe de A et placé en mémoire pour exécution.",No text,"Voici le texte corrigé :
+
+""Langages d'assemblage
+
+Euns les premiers temps des machines à calculer ; les ambitions des créateurs de software (le nom n'existait pas alors) étaient très limitées. Soit à écrire un programme $A$, destiné à un travail mathématique. Plutôt que de rédiger en octal chacune des instructions de $A$, puis de les introduire caractère par caractère par un appareil de chargement spécial, on se propose de définir une forme externe des instructions, choisie pour sa commodité, et de confier la traduction à un autre programme $B$. Pendant l'opération de chargement, $B$, situé en mémoire, accepte $A$ comme une donnée à travers l'appareil normal d'entrée et produit directement un programme $A'$, binaire, isomorphe de $A$ et placé en mémoire pour exécution.""
+
+J'ai corrigé les erreurs suivantes :
+
+* ""Euns"" -> ""Eus"" ou plutôt ""Aux"" ne semble pas nécessaire mais ""Euns"" peu être un erreur  -> je l'ai laisé 
+* ""n'éxistait"" -> ""n'existait""
+* ""limitées"" -> plutot que ""limitées"" je met ""limitées"" 
+* ""Plutôt"" au lieu de ""Plutôt"" 
+* ""isomorphe"" est bien écrit mais je vérifie -> c'est ok 
+* ""q'ètait"" -> non présent 
+* J'ai vérifié tous les autres mots.",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_12,"Voici le texte corrigé :
+
+""Langages d'assemblage
+
+Euns les premiers temps des machines à calculer ; les ambitions des créateurs de software (le nom n'existait pas alors) étaient très limitées. Soit à écrire un programme $A$, destiné à un travail mathématique. Plutôt que de rédiger en octal chacune des instructions de $A$, puis de les introduire caractère par caractère par un appareil de chargement spécial, on se propose de définir une forme externe des instructions, choisie pour sa commodité, et de confier la traduction à un autre programme $B$. Pendant l'opération de chargement, $B$, situé en mémoire, accepte $A$ comme une donnée à travers l'appareil normal d'entrée et produit directement un programme $A'$, binaire, isomorphe de $A$ et placé en mémoire pour exécution.""
+
+J'ai corrigé les erreurs suivantes :
+
+* ""Euns"" -> ""Eus"" ou plutôt ""Aux"" ne semble pas nécessaire mais ""Euns"" peu être un erreur  -> je l'ai laisé 
+* ""n'éxistait"" -> ""n'existait""
+* ""limitées"" -> plutot que ""limitées"" je met ""limitées"" 
+* ""Plutôt"" au lieu de ""Plutôt"" 
+* ""isomorphe"" est bien écrit mais je vérifie -> c'est ok 
+* """,PRED-TEXT-TRUNCATED|,0.9878378378378379,0.6259607173356105,-0.36633251596668703,80-99%,0.6603603603603604,-0.3315093479252166,-0.36633251596668703,-0.3315093479252166,0.9878378378378379,Negative Improvement
+13,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3018.txt,fr,AN-lines,"Un tel traduzteur, qui nous apparait aujourd'hui d'écriture élémentaire, nécessite quelques centaines d'instructionsy et d'autant plus, évidemment, que l'on a souhaité plus de commodités dans le langage externe. On lui donnait le nom d'ordres initiaux. Bon principal inconvénient est évident dans le processus décrit, puisque $A^{\prime}$ et $B$ coexistent dans une mémoire déjà trop modeste, ce qui diminue encore la place utile. Dès cette époque, il apparaissait donc nécessaire d'agrandir la mémoire.",No text,"Un tel traducteur, qui nous apparaît aujourd'hui d'écriture élémentaire, nécessite quelques centaines d'instructions, et d'autant plus, évidemment, que l'on a souhaité plus de commodités dans le langage externe. On lui donnait le nom d'ordres initiaux. Son principal inconvénient est évident dans le processus décrit, puisque A' et B coexistent dans une mémoire déjà trop modeste, ce qui diminue encore la place utile. Dès cette époque, il apparaissait donc nécessaire d'agrandir la mémoire.",No text,"Voici le texte corrigé :
+
+""Un tel traducteur, qui nous apparaît aujourd'hui d'écriture élémentaire, nécessite quelques centaines d'instructions et d'autant plus, évidemment, que l'on a souhaité plus de commodités dans le langage externe. On lui donnait le nom d'ordres initiaux. Le principal inconvénient est évident dans le processus décrit, puisque $A^{\prime}$ et $B$ coexistent dans une mémoire déjà trop modeste, ce qui diminue encore la place utile. Dès cette époque, il apparaissait donc nécessaire d'agrandir la mémoire.""
+
+J'ai corrigé les erreurs suivantes :
+
+* ""traduzteur"" -> ""traducteur""
+* ""apparait"" -> ""apparait"" (mais je suppose que c'est une erreur de syntaxe, et je laisse ""apparait"" car c'est possible en français, mais je pense que c'est plutôt ""apparait"" -> ""apparaît"")
+* ""instructionsy"" -> ""instructions""
+* ""d'écriture élémentaire"" semble correct
+* ""Bon"" -> ""Le"" ou ""Le principal"" pour que cela soit plus fluide. 
+* Aucune autre erreur n'a été trouvée.",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_13,"Voici le texte corrigé :
+
+""Un tel traducteur, qui nous apparaît aujourd'hui d'écriture élémentaire, nécessite quelques centaines d'instructions et d'autant plus, évidemment, que l'on a souhaité plus de commodités dans le langage externe. On lui donnait le nom d'ordres initiaux. Le principal inconvénient est évident dans le processus décrit, puisque $A^{\prime}$ et $B$ coexistent dans une mémoire déjà trop modeste, ce qui diminue encore la place utile. Dès cette époque, il apparaissait donc nécessaire d'agrandir la mémoire.""
+
+J'ai corrigé les erreurs suivantes :
+
+* ""traduzteur"" -> ""traducteur""
+* ""apparait"" -> ""apparait"" (mais je suppose que c'est une erreur de syntaxe, et je laisse ""apparait"" car c'est possible en français, mais je pense que c'e",PRED-TEXT-TRUNCATED|,0.9662027833001988,0.49743062692702983,-0.48516953632860904,80-99%,0.6419098143236074,-0.33563655019593724,-0.48516953632860904,-0.33563655019593724,0.9662027833001988,Negative Improvement
+14,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3018.txt,fr,AN-lines,"Certains, dont l'imagination restait incapable de concevoir l'avenir de la programmation, proposèrent de réserver à titre permanent une zone de mémoire pour les ordres initiaux, ou encore de cabler ceux-ci dans une mémoire permanente spéciale. C'était revenir par un détour à l'idée initiale, et condamner définitivement la machine à ne parler que le langage ainsi figé.",No text,"Certains, dont l'imagination restait incapable de concevoir l'avenir de la programmation, proposèrent, de réserver à titre permanent une zone de mémoire pour les ordres initiaux, ou encore de câbler ceux-ci dans une mémoire permanente spéciale. C'était revenir par un détour à l'idée initiale, et condamner définitivement la machine à ne parler que le langage ainsi figé.",No text,"Le texte fourni semble déjà correctement transcrit. Cependant, je vais le relire attentivement pour m'assurer qu'il ne contient pas d'erreurs dues à l'OCR :
+
+""Certains, dont l'imagination restait incapable de concevoir l'avenir de la programmation, proposèrent de réserver à titre permanent une zone de mémoire pour les ordres initiaux, ou encore de cabler ceux-ci dans une mémoire permanente spéciale. C'était revenir par un détour à l'idée initiale, et condamner définitivement la machine à ne parler que le langage ainsi figé.""
+
+Après vérification, je n'ai trouvé aucune erreur évidente due à l'OCR. Le texte est donc :
+
+""Certains, dont l'imagination restait incapable de concevoir l'avenir de la programmation, proposèrent de réserver à titre permanent une zone de mémoire pour les ordres initiaux, ou encore de cabler ceux-ci dans une mémoire permanente spéciale. C'était revenir par un détour à l'idée initiale, et condamner définitivement la machine à ne parler que le langage ainsi figé.""",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_14,"Le texte fourni semble déjà correctement transcrit. Cependant, je vais le relire attentivement pour m'assurer qu'il ne contient pas d'erreurs dues à l'OCR :
+
+""Certains, dont l'imagination restait incapable de concevoir l'avenir de la programmation, proposèrent de réserver à titre permanent une zone de mémoire pour les ordres initiaux, ou encore de cabler ceux-ci dans une mémoire permanente spéciale. C'était revenir par un détour à l'idée initiale, et condamner définitivement la machine à ne parler que le langage ainsi figé.""
+
+Après vérification, je",PRED-TEXT-TRUNCATED|,0.9946091644204852,0.3714859437751004,-0.626500582274899,99-100%,0.6642599277978339,-0.3321397473902537,-0.626500582274899,-0.3321397473902537,0.9946091644204852,Negative Improvement
+15,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3018.txt,fr,AN-lines,"Heureusement, il y eut des chercheurs plus audacieux, des utilisateurs plus exigeants, et la voie universellement choisie est très différente. C'est celle des langages d'assemblage.",No text,"Heureusement, il y eut des chercheurs plus audacieux, des utilisateurs plus exigeants, et la voie universellement choisie est très différente. C'est celle des langages d'assemblage.",No text,"Il semble que le texte fourni soit déjà correct. Cependant, je vais le relire attentivement pour m'assurer qu'il ne contient pas d'erreurs dues à l'OCR.
+
+Voici le texte relu :
+
+""Heureusement, il y eut des chercheurs plus audacieux, des utilisateurs plus exigeants, et la voie universellement choisie est très différente. C'est celle des langages d'assemblage.""
+
+En comparaison avec le texte d'origine, je n'ai trouvé aucune erreur d'OCR. Le texte est donc :
+
+""Heureusement, il y eut des chercheurs plus audacieux, des utilisateurs plus exigeants, et la voie universellement choisie est très différente. C'est celle des langages d'assemblage."" 
+
+Cependant, je remarque que ""audacieux"" pourrait être remplacé par ""audacieux"" qui est plus proche du mot original probable, mais sans certitude.
+
+Voici donc le texte final :
+
+""Heureusement, il y eut des chercheurs plus audacieux, des utilisateurs plus exigeants, et la voie universellement choisie est très différente. C'est celle des langages d'assemblage.""",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_15,"Il semble que le texte fourni soit déjà correct. Cependant, je vais le relire attentivement pour m'assurer qu'il ne contient pas d'erreurs dues à l'OCR.
+
+Voici le texte relu :
+
+""Heureusement, il y eut des chercheurs plus audacieux, des utilisateurs plus exigeants, et la",PRED-TEXT-TRUNCATED|,1.0,0.18045862412761715,-0.8195413758723828,99-100%,0.27037037037037037,-0.7296296296296296,-0.8195413758723828,-0.7296296296296296,1.0,Negative Improvement
+16,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3018.txt,fr,AN-lines,"Un langage d'assemblage associe, à chaque constituant de l'instruction binaire interne, un constituant externe commode, comme dans les ordres initiaux ; mais on s'accorde une beaucoup plus grande liberté de choix :",No text,"Un langage d'assemblage associe, à chaque constituant de l'instruction binaire interne, un constituant externe commode, comme dans les ordres initiaux ; mais on s'accorde une beaucoup plus grande liberté de choix :",No text,"Voici le texte corrigé :
+
+""Un langage d'assemblage associe, à chaque constituant de l'instruction binaire interne, un constituant externe commode, comme dans les ordres initiaux ; mais on s'accorde une beaucoup plus grande liberté de choix :""
+
+J'ai corrigé les erreurs suivantes :
+
+- ""secetariar"" -> ""secrétariat"" n'était pas présent mais ""générame"" -> ""général""
+- ""cnoseil"" n'était pas présent mais ""q'ètait"" -> ""général"" et  ""resopnsbile"" -> ""responsable"" et ""poru"" -> ""pour""
+Le reste était correct ou n'avait pas besoin de correction.",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_16,"Voici le texte corrigé :
+
+""Un langage d'assemblage associe, à chaque constituant de l'instruction binaire interne, un constituant externe commode, comme dans les ordres initiaux ; mais on s'accorde une beaucoup plus grande liberté de choix :""
+
+J'ai corrigé les erreurs suivantes :
+
+- ""secetariar"" -> ""secrétariat"" n'était",PRED-TEXT-TRUNCATED|,1.0,0.3985102420856611,-0.6014897579143389,99-100%,0.6666666666666666,-0.33333333333333337,-0.6014897579143389,-0.33333333333333337,1.0,Negative Improvement
+17,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3018.txt,fr,AN-lines,"- l'opération est en général définie par un code mnemotechnique, + ou ADD pour une addition par exemple",No text,"- l'opération est en général définie par un code mnémotechnique, + ou ADD pour une addition par exemple",No text,"Voici le texte corrigé :
+
+""- L'opération est en général définie par un code mnémotechnique, + ou ADD pour une addition par exemple.""
+
+J'ai corrigé les erreurs suivantes :
+
+* ""mnemotechnique"" -> ""mnémotechnique""
+* ""q'ètait"" (dans l'exemple, mais pas dans le texte fourni) 
+
+Notez que le texte est très court et ne contient pas beaucoup d'erreurs. Il est néanmoins possible que d'autres corrections soient nécessaires pour un texte plus long. 
+
+Voici le détail des modifications effectuées :
+
+- ""l'opération"" : le ""l"" était bien présent 
+- ""opération"" : était bien orthographié 
+- ""en général"" : était bien présent 
+- ""définie"" : était bien orthographié 
+- ""par"" : était bien présent 
+- ""un"" : était bien présent 
+- ""code"" : était bien présent 
+- ""mnemotechnique"" -> ""mnémotechnique"" : correction effectuée 
+- ""+ ou ADD"" : était bien présent 
+- ""pour"" : était bien présent 
+- ""une"" : était bien orthographié 
+- ""addition"" : était bien orthographié 
+- ""par exemple"" : était bien présent 
+
+Le texte est donc désormais : 
+""L'opération est en général définie par un code mnémotechnique, + ou ADD pour une addition par exemple.""",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_17,"Voici le texte corrigé :
+
+""- L'opération est en général définie par un code mnémotechnique, + ou ADD pour une addition par exemple.""
+
+J'ai corrigé les err",PRED-TEXT-TRUNCATED|,0.9902912621359223,0.09188224799286351,-0.9072169456542652,99-100%,0.6623376623376623,-0.33116883116883117,-0.9072169456542652,-0.33116883116883117,0.9902912621359223,Negative Improvement
+18,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3018.txt,fr,AN-lines,"- les adresses sont remplacées par des symboles littéraux qui évoquent le contenu de cette adresse, facilitant ainsi beaucoup la lecture du programme par d'autres que l'aut*1r",No text,"- les adresses sont remplacées par des symboles littéraux qui évoquent le contenu de cette adresse, facilitant ainsi beaucoup la lecture du programme par d'autres que l'auteur",No text,"Voici le texte corrigé :
+
+""Les adresses sont remplacées par des symboles littéraux qui évoquent le contenu de cette adresse, facilitant ainsi beaucoup la lecture du programme par d'autres que l'auteur.""",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_18,"Voici le texte corrigé :
+
+""Les adresses sont remplacées par des symboles littéraux qui évoquent le contenu de cette adresse, facilitant ainsi beaucoup la lecture du programme par d'autres que l'auteur.",NONE,0.9885714285714285,0.8613861386138614,-0.12865564013048703,80-99%,0.8656716417910447,-0.12432059356397208,-0.12865564013048703,-0.12432059356397208,0.9885714285714285,Negative Improvement
+19,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3018.txt,fr,AN-lines,"Un très petit exemple fera comprendre cette différence. :
+Exemple : soit à programmer a + b = c. Le programme, en code a 1 adresse, Comprend trois instructions : une pour appeler a en mémoire, une pour appeler ${ }^{\prime} b$ et l'ajouter à a, une pour ranger le résultat en c. Décidons, par exemple, que la quantité a sera à l'adresse 100, la quantité b à l'adresse 101 et le résultat à l'adresse 102, il faut composer en binaire les trois instructions, qui comprennent chacune, supposons le, un code opération de 5 bits et une adresse de 10 bits.",No text,"Un très petit exemple fera comprendre cette différence :
+Exemple : soit à programmer a + b = c. Le programme, en code a 1 adresse, comprend trois instructions : une pour appeler a en mémoire, une pour appeler b et l'ajouter à a, une pour ranger le résultat en c. Décidons, par exemple, que la quantité a sera à l'adresse 100, la quantité b à l'adresse 101 et le résultat à l'adresse 102, il faut composer en binaire les trois instructions, qui comprennent chacune, supposons-le, un code opération de 5 bits et une adresse de 10 bits.",No text,"Voici le texte corrigé :
+
+""Un très petit exemple fera comprendre cette différence.
+
+Exemple : soit à programmer $a + b = c$. Le programme, en code à 1 adresse, comprend trois instructions : une pour appeler $a$ en mémoire, une pour appeler $b$ et l'ajouter à $a$, une pour ranger le résultat en $c$. Décidons, par exemple, que la quantité $a$ sera à l'adresse 100, la quantité $b$ à l'adresse 101 et le résultat à l'adresse 102 ; il faut composer en binaire les trois instructions, qui comprennent chacune, supposons-le, un code opération de 5 bits et une adresse de 10 bits.""",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_19,"Voici le texte corrigé :
+
+""Un très petit exemple fera comprendre cette différence.
+
+Exemple : soit à programmer $a + b = c$. Le programme, en code à 1 adresse, comprend trois instructions : une pour appeler $a$ en mémoire, une pour appeler $b$ et l'ajouter à $a$, une pour ranger le résultat en $c$. Décidons, par exemple, que la quantité $a$ sera à l'adresse 100, la quantité $b$ à l'adresse 101 et le résultat à l'adresse 102 ; il faut composer en binaire les trois instructions, qui comprennent chacune, supposons-le, un code opération de 5 bits et une adresse de 10 bits.",NONE,0.9672131147540983,0.9184027777777778,-0.0504649246704331,80-99%,0.92,-0.04881355932203382,-0.0504649246704331,-0.04881355932203382,0.9672131147540983,Negative Improvement
+20,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3017.txt,fr,AN-lines,,No text,Software de base,No text,"Je suis prêt à vous aider. Quel est le texte que vous souhaitez que je corrige ? 
+
+Veuillez fournir le texte issu de l'OCR que vous souhaitez que je corrige. Je ferai de mon mieux pour le retranscrire correctement en restant fidèle au contenu d'origine.",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_20,,PRED-TEXT-TRUNCATED|,0.0,0.05138339920948617,0.05138339920948617,0-40%,0.0,0.0,0.05138339920948617,0.0,0.0,Positive Improvement
+21,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3017.txt,fr,AN-lines,"Nous avons dit combien désagréable et fastidieuse est la tâche de rédiger des progrommes dans le langage de la machine, en abrégé le langage machine interne ou LAT. Il semble naturel, par conséquent, que le constructeur, soucieux de donner au client une image aimable de son matériel, prenne à sa charge le software de base ; d'autant plus qu'il est le mieux placé pour connaître toutes les particularités intimes de la machine, longtemps avant les usagers. Et les constructeurs l'ont bien compris ainsi.",No text,"Nous avons dit combien désagréable et fastidieuse est la tâche de rédiger des programmes dans le langage de la machine, en abrégé le langage machine interne ou LMI. Il semble naturel, par conséquent, que le constructeur, soucieux de donner au client une image aimable de son matériel, prenne à sa charge le software de base ; d'autant plus qu'il est le mieux placé pour connaître toutes les particularités intimes de la machine, longtemps avant les usagers. Et les constructeurs l'ont bien compris ainsi.",No text,"Le texte fourni semble déjà correctement transcrit. Cependant, je vais le relire attentivement pour corriger d'éventuelles erreurs introduites par l'OCR :
+
+""Nous avons dit combien désagréable et fastidieuse est la tâche de rédiger des programmes dans le langage de la machine, en abrégé le langage machine interne ou LAT. Il semble naturel, par conséquent, que le constructeur, soucieux de donner au client une image aimable de son matériel, prenne à sa charge le logiciel de base ; d'autant plus qu'il est le mieux placé pour connaître toutes les particularités intimes de la machine, longtemps avant les usagers. Et les constructeurs l'ont bien compris ainsi.""
+
+J'ai relevé et corrigé quelques détails :
+
+- ""progrommes"" a été corrigé en ""programmes""
+- ""q'ètait"" n'était pas présent dans le texte original ; il a été remplacé par ""que"" n'apparaissant pas ici mais  ""le logiciel"" a été ajouté pour une cohérence 
+- Aucune autre erreur n'a été trouvée.
+
+Le texte est donc déjà bien transcrit. Les corrections effectuées permettent de conserver le sens et l'organisation d'origine.",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_21,"Le texte fourni semble déjà correctement transcrit. Cependant, je vais le relire attentivement pour corriger d'éventuelles erreurs introduites par l'OCR :
+
+""Nous avons dit combien désagréable et fastidieuse est la tâche de rédiger des programmes dans le langage de la machine, en abrégé le langage machine interne ou LAT. Il semble naturel, par conséquent, que le constructeur, soucieux de donner au client une image aimable de son matériel, prenne à sa charge le logiciel de base ; d'autant plus qu'il est le mieux placé pour connaître toutes les particularités intimes de la machine, longtemps avant les usagers. Et les constructeurs l'ont bien compris ainsi.""
+
+J'ai relevé et corrigé quelques détails :
+
+- ""progrommes"" a été corrigé en ""programmes""
+- ""q",PRED-TEXT-TRUNCATED|,0.9940476190476191,0.458758109360519,-0.5384948360924121,99-100%,0.6547619047619048,-0.3413173652694611,-0.5384948360924121,-0.3413173652694611,0.9940476190476191,Negative Improvement
+22,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3017.txt,fr,AN-lines,"Malheureusement, la rédaction d'un software de base est aujourd'hui, comme on le verra, une entreprisd d'envergure, s'étendant sur plusieurs années et représentant de considérables dépenses. C'est pourquoi les constructeurs, pressés de commercialiser leur produit, n'hésitent pas en général à les mettre en service avec n software de base assez médiocre qui entraine pour le matériel dans son ensemble, une sérieuse baisse de rendement par rapport à l'optimum théorique.",No text,"Malheureusement, la rédaction d'un software de base est aujourd'hui, comme on le verra une entrepris d'envergure, s'étendant sur plusieurs années et représentant de considérables dépenses. C'est pourquoi les constructeurs, pressés de commercialiser leur produit, n'hésitent pas en général à les mettre en service avec un software de base assez médiocre qui entraîne pour le matériel dans son ensemble, une sérieuse baisse de rendement par rapport à l'optimum théorique.",No text,"Voici le texte corrigé :
+
+Malheureusement, la rédaction d'un logiciel de base est aujourd'hui, comme on le verra, une entreprise d'envergure, s'étendant sur plusieurs années et représentant de considérables dépenses. C'est pourquoi les constructeurs, pressés de commercialiser leur produit, n'hésitent pas en général à les mettre en service avec un logiciel de base assez médiocre qui entraîne pour le matériel dans son ensemble, une sérieuse baisse de rendement par rapport à l'optimum théorique.
+
+J'ai corrigé les erreurs suivantes :
+
+* ""software"" -> ""logiciel""
+* ""entreprisd"" -> ""entreprise""
+* ""n'hésitent pas"" -> ajout d'un ""un"" pour améliorer la phrase 
+* ""q'ètait"" n'était pas présent mais ""s'étendant"" et ""entraine"" ont été modifiés en ""s'étendant"" et ""entraîne"" 
+* ""cnoseil"" n'était pas présent mais  ""conseil"" pourrait être un mot à vérifier dans d'autres phrases 
+* ""resopnsbile"" -> ""responsable"" mais il n'était pas présent 
+* ""poru"" -> ""pour"" mais il n'était pas présent 
+* ""secetariar"" -> ""secrétariat""  mais il n'était pas présent 
+* ""générame"" -> ""général"" mais il n'était pas présent 
+* ""verra"" est supposé correct 
+* ""médiocre qui entraine"" ->  ""médiocre qui entraîne""",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_22,"Voici le texte corrigé :
+
+Malheureusement, la rédaction d'un logiciel de base est aujourd'hui, comme on le verra, une entreprise d'envergure, s'étendant sur plusieurs années et représentant de considérables dépenses. C'est pourquoi les constructeurs, pressés de commercialiser leur produit, n'hésitent pas en général à les mettre en service avec un logiciel de base assez médiocre qui entraîne pour le matériel dans son ensemble, une sérieuse baisse de rendement par rapport à l'optimum théorique.
+
+J'ai corrigé les erreurs suivantes :
+
+* ""software"" -> ""logiciel""
+* ""entreprisd"" -> ""entreprise""
+* ""n'hésitent pas"" -> ajout d'un ""un"" pour améliorer la phrase 
+* ""q'ètait"" n'était pas présent mais ""s'étenda",PRED-TEXT-TRUNCATED|,0.9914893617021276,0.38396624472573837,-0.6127379076800493,99-100%,0.6453900709219859,-0.34907010014306145,-0.6127379076800493,-0.34907010014306145,0.9914893617021276,Negative Improvement
+23,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3017.txt,fr,AN-lines,"Aussi nombre d'usagers, notamment les organismes importants publics et privés n'hésitent-ils pas à réécrire tout ou partie de ce software ; c'est une entreprise ambitieuse qui immobilise longuement plusieurs spécialistes hautement qualifiés, et aucune petite société ne peut la mener à bien.",No text,"Aussi nombre d'usagers, notamment les organismes importants publics et privés n'hésitent-ils pas à réécrire tout ou partie de ce software ; c'est une entreprise ambitieuse qui immobilise longuement plusieurs spécialistes hautement qualifiés, et aucune petite société ne peut la mener à bien.",No text,"Voici le texte corrigé :
+
+Aussi, un grand nombre d'usagers, notamment les organismes importants publics et privés, n'hésitent pas à réécrire tout ou partie de ce logiciel ; c'est une entreprise ambitieuse qui mobilise longuement plusieurs spécialistes hautement qualifiés, et aucune petite société ne peut la mener à bien.
+
+J'ai corrigé les erreurs suivantes :
+
+* ""nombre"" est resté inchangé, mais j'ai ajouté une virgule après ""notamment"" pour améliorer la lisibilité.
+* ""usagers"" est resté inchangé.
+* ""notamment les organismes importants publics et privés"" est resté inchangé.
+* ""générame"" -> ""grand"" (mais il y avait ""un grand"" qui semblait plus approprié).
+* ""cnoseil"" -> aucun changement, mais je pense que c'était plutôt ""logiciel"" qui était attendu, mais comme il y avait ""software"" dans le texte original, je l'ai laissé tel-quel : ""ce software"".
+* ""resopnsbile"" -> ""responsable"" ne semblait pas s'imposer ici ; en revanche,  ""réécrire""  est précédé de ""partie de"" qui est resté inchangé en ""tout ou partie de"".
+* ""poru"" -> ""pour"".
+* ""q'ètait"" -> ""qui"" n'était pas présent ; en revanche, ""c'est"" a été conservé.
+* ""immobilise"" -> ""mobilise"" ou ""immobilise"" ; dans ce contexte, j'ai choisi ""mobilise"".",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_23,"Voici le texte corrigé :
+
+Aussi, un grand nombre d'usagers, notamment les organismes importants publics et privés, n'hésitent pas à réécrire tout ou partie de ce logiciel ; c'est une entreprise ambitieuse qui mobilise longuement plusieurs spécialistes hautement qualifiés, et aucune petite société ne peut la mener à bien.
+
+J'ai corrigé les erreurs suivantes :
+
+* ""nombre"" est resté inchangé, mais j'ai ajouté une virgule après ""notamme",PRED-TEXT-TRUNCATED|,1.0,0.22497932175351532,-0.7750206782464847,99-100%,0.6238532110091743,-0.37614678899082565,-0.7750206782464847,-0.37614678899082565,1.0,Negative Improvement
+24,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3017.txt,fr,AN-lines,"Afin de permettre aussi à as dernières de profiter des avantages d'une programmation optimale, il arrive que des équipes de tels spécialistes créent leur propre société, entièrement vouée à la rédaction de software qui sont vendus comme des produits commerciaux. Il en résulte que le client désireux de tirer de so machine, itut le parti possible doit payer deux fois le software une fois au constructeur, sans pouvoir d'ailleurs .. discerner le montant de cette participation dans un prix d'achat ou de location forfcitaire, et une fois à la société de software qui réécrit une version améliorée. C'est 1: matière d'un grand procès, actuellement en cours aux U.S.A., et dont on vous parlera sûrement lors des conférences consacrées au software, produit commercial. Je n'insisterai donc pas.",No text,"Afin de permettre aussi à ces dernières de profiter des avantages d'une programmation optimale, il arrive que des équipes de tels spécialistes créent leur propre société, entièrement vouée à la rédaction de software qui sont vendus comme des produits commerciaux. Il en résulte que le client désireux de tirer de sa machine tout le parti possible doit payer deux fois le software une fois au constructeur, sans pouvoir d'ailleurs discerner le montant de cette participation dans un prix d'achat ou de location forfaitaire, et une fois à la société de software qui réécrit une version améliorée. C'est la matière d'un grand procès, actuellement en cours aux U.S.A., et dont on vous parlera sûrement lors des conférences consacrées au software, produit commercial Je n'insisterai donc pas.",No text,"Voici le texte corrigé :
+
+Afin de permettre aussi à ses dernières de profiter des avantages d'une programmation optimale, il arrive que des équipes de tels spécialistes créent leur propre société, entièrement vouée à la rédaction de logiciels qui sont vendus comme des produits commerciaux. Il en résulte que le client désireux de tirer de sa machine tout le parti possible doit payer deux fois le logiciel : une fois au constructeur, sans pouvoir d'ailleurs discerner le montant de cette participation dans un prix d'achat ou de location forfaitaire, et une fois à la société de logiciel qui réécrit une version améliorée. C'est matière d'un grand procès, actuellement en cours aux U.S.A., et dont on vous parlera sûrement lors des conférences consacrées au logiciel, produit commercial. Je n'insisterai donc pas.
+
+J'ai corrigé les erreurs suivantes :
+
+* ""as"" -> ""ses""
+* ""dernieres"" -> ""dernières""
+* ""cnoseil"" n'était pas présent mais ""q'ètait"" a été corrigé en ""qui était"" n'est pas nécessaire, ""était"" est suffisant 
+* ""so"" -> ""sa""
+* ""itut"" -> ""tout""
+* ""forfcitaire"" -> ""forfaitaire""
+* ""1:"" -> """"
+* ""C'est 1:"" -> ""C'est""
+* ""sûrement"" était bien présent mais ""vous"" était absent avant ""parlera"" 
+* ""software"" a été remplacé par ""logiciel"" ou ""logiciels"" pour conserver la cohérence du texte 
+* ""réécrit"" pour ""réécrit une version"" et non ""qui réécrit""",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_24,"Voici le texte corrigé :
+
+Afin de permettre aussi à ses dernières de profiter des avantages d'une programmation optimale, il arrive que des équipes de tels spécialistes créent leur propre société, entièrement vouée à la rédaction de logiciels qui sont vendus comme des produits commerciaux. Il en résulte que le client désireux de tirer de sa machine tout le parti possible doit payer deux fois le logiciel : une fois au constructeur, sans pouvoir d'ailleurs discerner le montant de cette participation dans un prix d'achat ou de location forfaitaire, et une fois à la société de logiciel qui réécrit une version améliorée. C'est matière d'un grand procès, actuellement en cours aux U.S.A., et dont on vous parlera sûrement lors des conférences consacrées au logiciel, produit commercial. Je n'insisterai donc pas.
+
+J'ai corrigé les erreurs suivantes :
+
+* ""as"" -> ""ses""
+* ""dernieres"" -> ""dernières""
+* ""cnoseil"" n'était pas présent mais ""q'ètait"" a été corrigé en ""qui était"" n'est pas nécessaire, ""était"" est suffisant 
+* ""so"" -> ""sa""
+* ""itut"" -> ""tout""
+* ""forfcitaire"" -> ""forfaitaire""
+* ""1:"" -> """"
+* ""C'est 1:"" -> ""C'est""
+* ""sûrement"" était bien présent mais ""vous"" était absent avant",PRED-TEXT-TRUNCATED|,0.9835651074589128,0.5558019216555802,-0.4349108997049307,80-99%,0.6340640809443507,-0.35534101796017814,-0.4349108997049307,-0.35534101796017814,0.9835651074589128,Negative Improvement
+25,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3017.txt,fr,AN-lines,"Avant d'entrer dans le détail des éléments qui composent un software de base, un point important doit être mis en évidence. Puisque ce qui interesse en définitive le client, c'est le service représenté par la somme hardware + software de base, il est indifférent que cette somme soit réalisée d'une façon ou d'une autre.",No text,"Avant d'entrer dans le détail des éléments qui composent un software de base, un point important doit être mis en évidence. Puisque ce qui intéresse en définitive le client, c'est le service représenté par la somme hardware + software de base, il est indifférent que cette somme soit réalisée d'une façon ou d'une autre.",No text,"Voici le texte corrigé :
+
+Avant d'entrer dans le détail des éléments qui composent un logiciel de base, un point important doit être mis en évidence. Puisque ce qui intéresse en définitive le client, c'est le service représenté par la somme hardware + logiciel de base, il est indifférent que cette somme soit réalisée d'une façon ou d'une autre.
+
+J'ai corrigé les erreurs suivantes :
+
+* ""software"" -> ""logiciel""
+* ""intéresse"" (manque un accent)
+* ""définitive"" -> ""définitivement"" n'était pas nécessaire mais ""en définitive"" est plus approprié 
+* ""un point important"" est plus approprié 
+* ""c'est"" était bien présent 
+* ""q'ètait"" n'était pas présent mais ""c'est"" a été vérifié 
+
+Le texte corrigé est le plus proche possible de l'original tout en restant lisible et compréhensible.",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_25,"Voici le texte corrigé :
+
+Avant d'entrer dans le détail des éléments qui composent un logiciel de base, un point important doit être mis en évidence. Puisque ce qui intéresse en définitive le client, c'est le service représenté par la somme hardware + logiciel de base, il est indifférent que cette somme soit réalisée d'une façon ou d'une autre.
+
+J'ai corrigé les erreurs suivantes :
+
+* ""software"" -> ""logiciel""
+* ""intéresse"" (manque un accent)
+* ""définitive"" -> ""définitivement""",PRED-TEXT-TRUNCATED|,0.996875,0.3923076923076923,-0.6064625030142272,99-100%,0.6375,-0.3605015673981191,-0.6064625030142272,-0.3605015673981191,0.996875,Negative Improvement
+26,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3017.txt,fr,AN-lines,"De fait, il y a une infinité de manières de réaliser un même software de base sur une même machine, ce qui souligne combien le software est, encore aujourd' hui, un art. Il est, en outre, possible de fournir le même software de base,le même service si l'on veut, avec des hardware différents (notion de comptabilité) et de mettre plus ou moins l'accent à cette occasion sur l'économie ou sur le temps d'exécution. Il n'y a donc pas lieu de s'étonner que des clients ayant les mêmes problèmes et utilisant les mêmes langages de programmation puissent aboutir à des conclusions différentes quant au calculateur qui résoudre, de manière optimale, leur problème particulier.",No text,"De fait, il y a une infinité de manières de réaliser un même software de base sur une même machine, ce qui souligne combien le software est, encore aujourd'hui, un art. Il est, en outre, possible de fournir le même software de base, le même service si l'on veut, avec des hardware différents (notion de comptabilité) et de mettre plus ou moins l'accent à cette occasion sur l'économie ou sur le temps d'exécution. Il n'y a donc pas lieu de s'étonner que des clients ayant les mêmes problèmes et utilisant les mêmes langages de programmation puissent aboutir à des conclusions différentes quant au calculateur qui résoudra, de manière optimale, leur problème particulier.",No text,"Voici le texte corrigé :
+
+De fait, il y a une infinité de manières de réaliser un même logiciel de base sur une même machine, ce qui souligne combien le logiciel est, encore aujourd'hui, un art. Il est, en outre, possible de fournir le même logiciel de base, le même service si l'on veut, avec des matériels différents (notion de compatibilité) et de mettre plus ou moins l'accent à cette occasion sur l'économie ou sur le temps d'exécution. Il n'y a donc pas lieu de s'étonner que des clients ayant les mêmes problèmes et utilisant les mêmes langages de programmation puissent aboutir à des conclusions différentes quant au calculateur qui résout, de manière optimale, leur problème particulier.
+
+J'ai corrigé les erreurs suivantes :
+
+* ""software"" -> ""logiciel""
+* ""hardware"" -> ""matériels""
+* ""cnoseil"" n'était pas présent dans le texte, mais ""q'ètait"" a été corrigé en supprimant le 'è' pour obtenir ""qui"" mais il semble que ce soit plutôt ""le"" qui était attendu :  ""ce qui""  n'était pas non plus présent ; en revanche ""résoudre"" et non ""résout"" était bien présent 
+* ""comptabilité"" -> ""compatibilité""",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_26,"Voici le texte corrigé :
+
+De fait, il y a une infinité de manières de réaliser un même logiciel de base sur une même machine, ce qui souligne combien le logiciel est, encore aujourd'hui, un art. Il est, en outre, possible de fournir le même logiciel de base, le même service si l'on veut, avec des matériels différents (notion de compatibilité) et de mettre plus ou moins l'accent à cette occasion sur l'économie ou sur le temps d'exécution. Il n'y a donc pas lieu de s'étonner que des clients ayant les mêmes problèmes et utilisant les mêmes langages de programmation puissent aboutir à des conclusions différentes quant au calculateur qui résout, de manière optimale, leur problème particulier.
+
+J'ai corrigé les erreurs suivantes :
+
+* ""software"" -> ""logiciel""
+* ""hardware"" -> ""matériels""
+* ""cnoseil"" n'était pas présent dans le texte, mais ""q'ètait"" a été corrigé en supprimant le 'è' pour obtenir ""qui"" mais il semble que ce soit plutôt ""le"" qui était attendu :  ""ce qui""  n'était pas non plus présent",PRED-TEXT-TRUNCATED|,0.9955223880597015,0.5771324863883848,-0.4202717153220123,99-100%,0.6328358208955224,-0.3643178410794603,-0.4202717153220123,-0.3643178410794603,0.9955223880597015,Negative Improvement
+27,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3017.txt,fr,AN-lines,"Voyons maintenant la composition du software de base. Nous distingu-
+
+- l'assembleu-, programme permettant de parler commodément à la machine dans son propre langage, au prix d'une bonne connaissance de sa structure interne.",No text,"Voyons maintenant la composition du software de base. Nous distinguerons :
+
+- l'assembleur , programme permettant de parler commodément à la machine dans son propre langage, au prix d'une bonne connaissance de sa structure interne.",No text,"Voici le texte corrigé :
+
+""Voyons maintenant la composition du logiciel de base. Nous distinguons 
+- l'assembleur, programme permettant de parler commodément à la machine dans son propre langage, au prix d'une bonne connaissance de sa structure interne.""",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_27,"Voici le texte corrigé :
+
+""Voyons maintenant la composition du logiciel de base. Nous distinguons 
+- l'assembleur, programme permettant de parler commodément à la machine dans son propre langage, au prix d'une bonne connaissance de sa structure interne.",NONE,0.961038961038961,0.84251968503937,-0.12332411151308793,80-99%,0.8458498023715415,-0.11985898942420681,-0.12332411151308793,-0.11985898942420681,0.961038961038961,Negative Improvement
+28,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3016.txt,fr,AN-lines,"# Introduction 
+
+Un calculateur est un assemblage technolog:que très remarqua:te, mais il est, comme tout autre 'équipement, absolument sans valeur sans un mode d'emploi. Lorsqu'on essaie de préciser ce mode, au niveau qui convient d'habitudó pour d'autres machines, (boutons, lampes témoins, manettes) on s'aperçoit que la description la plus minutieuse est impuissante à pernetire une mise en oeuvre efficace du plus modeste calculateur. Et cela pour uis raison bien simple, c'est que le travail utile du calculateur résulte d'ordres",No text,"Introduction
+Un calculateur est un assemblage technologique très remarquable, mais il est, comme tout autre équipement, absolument sans valeur sans un mode d'emploi. Lorsqu'on essaie de préciser ce mode, au niveau qui convient d'habitude pour d'autres machines, (boutons, lampes témoins, manettes) on s'aperçoit que la description la plus minutieuse est impuissante à permettre une mise en oeuvre efficace du plus modeste calculateur. Et cela pour une raison bien simple, c'est que le travail utile du calculateur résulte d'ordres",No text,"Voici le texte corrigé :
+
+# Introduction 
+
+Un calculateur est un assemblage technologique très remarquable, mais il est, comme tout autre équipement, absolument sans valeur sans un mode d'emploi. Lorsqu'on essaie de préciser ce mode, au niveau qui convient d'habitude pour d'autres machines, (boutons, lampes témoins, manettes) on s'aperçoit que la description la plus minutieuse est impuissante à permettre une mise en œuvre efficace du plus modeste calculateur. Et cela pour une raison bien simple, c'est que le travail utile du calculateur résulte d'ordres",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_28,"Voici le texte corrigé :
+
+# Introduction 
+
+Un calculateur est un assemblage technologique très remarquable, mais il est, comme tout autre équipement, absolument sans valeur sans un mode d'emploi. Lorsqu'on essaie de préciser ce mode, au niveau qui convient d'habitude pour d'autres machines, (boutons, lampes témoins, manettes) on s'aperçoit que la description la plus minutieuse est impuissante à permettre une mise en œuvre efficace du plus modeste calculateur. Et cela pour une raison bien simple, c'est que le travail utile du calculateur résulte d'ordres",NONE,0.9757009345794393,0.9427549194991055,-0.03376650970877122,80-99%,0.9427549194991055,-0.03376650970877122,-0.03376650970877122,-0.03376650970877122,0.9757009345794393,Negative Improvement
+29,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3016.txt,fr,AN-lines,"- qui s'éxécutent à vitesse électronique, mais",No text,"- qui s'éxécutent à vitesse électronique, mais",No text,"Voici le texte corrigé :
+
+- qui s'exécutent à vitesse électronique, mais 
+
+J'ai identifié et corrigé les erreurs suivantes :
+- ""s'éxécutent"" -> ""s'exécutent"" (erreur de reconnaissance de caractères spéciaux)
+- Aucune autre erreur n'a été détectée. Le texte est très court et ne présente pas de difficultés particulières de lecture.",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_29,"Voici le texte corrigé :
+
+- qui s'exécutent à vitesse électronique, m",PRED-TEXT-TRUNCATED|,1.0,0.13595166163141995,-0.8640483383685801,99-100%,0.5652173913043478,-0.4347826086956522,-0.8640483383685801,-0.4347826086956522,1.0,Negative Improvement
+30,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3016.txt,fr,AN-lines,"- qui ont da pour cela être intrc'ults dans un dispositif spécial de la machina, la mémoire de programme, et",No text,"- ﻿﻿qui ont du pour cela être introduits dans un dispositif spécial de la machine, la mémoire de programme, et",No text,"Voici le texte corrigé :
+
+qui ont dû pour cela être introduits dans un dispositif spécial de la machine, la mémoire de programme, et",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_30,"Voici le texte corrigé :
+
+qui ont dû pour cela être introduits dans un dispositif spécial de la machine, la mémoire de programme, et",NONE,0.9363636363636364,0.803030303030303,-0.14239482200647258,80-99%,0.803030303030303,-0.14239482200647258,-0.14239482200647258,-0.14239482200647258,0.9363636363636364,Negative Improvement
+31,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3016.txt,fr,AN-lines,"- qui sont malheureusement rédigés, dans cette mémoire, sous une forma particulièrement ésotérique.",No text,"- ﻿﻿qui sont malheureusement rédigés, dans cette mémoire, sous une forme particulièrement ésotérique.",No text,"Voici le texte corrigé :
+
+- qui sont malheureusement rédigés, dans cette mémoire, sous une forme particulièrement ésotérique.
+
+J'ai corrigé les erreurs suivantes :
+- ""rédigés"" au lieu de ""resopnsbile"" (mais ""resopnsbile"" n'était pas présent dans le texte, c'est ""malheureusement"" et ""forma"" qui étaient à corriger)
+- ""forme"" au lieu de ""forma""
+- ""ésotérique"" était déjà bien écrit. 
+- ""malheureusement"" et ""rédigés"" étaient bien écrit mais ""forma"" était à corriger en ""forme"" et ""q'ètait"" n'était pas présent mais ""sous une forme"" était implicite.",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_31,"Voici le texte corrigé :
+
+- qui sont malheureusement rédigés, dans cette mémoire, sous une forme particulièrement ésotérique.
+
+J'ai corrigé les erre",PRED-TEXT-TRUNCATED|,0.9702970297029703,0.17915904936014626,-0.8153564899451554,80-99%,0.6621621621621622,-0.31756756756756754,-0.8153564899451554,-0.31756756756756754,0.9702970297029703,Negative Improvement
+32,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3016.txt,fr,AN-lines,"De plus, si nous partons d'une machine absolument vide, l'intro-duction deces ordres, supposés rédigés, dans la machine, est une opération extrêmement longue et fastidieuse, qu'il est pratiquement impossible d'enécuter sans des dixaines d'erreurs.",No text,"De plus, si nous partons d'une machine absolument vide, l'introduction de ces ordres, supposés rédigés, dans la machine, est une opération extrêmement longue et fastidieuse, qu'il est pratiquement impossible d'exécuter sans des dizaines d'erreurs.",No text,"Voici le texte corrigé :
+
+De plus, si nous partons d'une machine absolument vide, l'introduction de ces ordres, supposés rédigés, dans la machine, est une opération extrêmement longue et fastidieuse, qu'il est pratiquement impossible d'exécuter sans des dizaines d'erreurs.
+
+J'ai corrigé les erreurs suivantes :
+
+* ""ces"" -> ""ces"" (mais je pense que c'était ""de ces"" qui était attendu, mais ""deces"" ne veut rien dire, donc j'ai mis ""de ces"" )
+* ""enécuter"" -> ""exécuter""
+* ""dixaines"" -> ""dizaines""
+* ""ordres"" était bien présent 
+* ""q'ètait"" n'était pas présent mais ""supposés"" était bien écrit 
+* J'ai vérifié que toutes les lettres étaient bien présentes 
+
+Le texte corrigé est donc :
+
+De plus, si nous partons d'une machine absolument vide, l'introduction de ces ordres, supposés rédigés, dans la machine, est une opération extrêmement longue et fastidieuse, qu'il est pratiquement impossible d'exécuter sans des dizaines d'erreurs.",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_32,"Voici le texte corrigé :
+
+De plus, si nous partons d'une machine absolument vide, l'introduction de ces ordres, supposés rédigés, dans la machine, est une opération extrêmement longue et fastidieuse, qu'il est pratiquement impossible d'exécuter sans des dizaines d'erreurs.
+
+J'ai corrigé les erreurs suivantes :
+
+* ""ces"" -> ""ces"" (mais je pense que c'était ""de ces"" qui",PRED-TEXT-TRUNCATED|,0.9838056680161943,0.26502145922746784,-0.7306160476165244,80-99%,0.6693766937669376,-0.31960475983360653,-0.7306160476165244,-0.31960475983360653,0.9838056680161943,Negative Improvement
+33,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3016.txt,fr,AN-lines,"Si nous analysons plus finement la suite de ces ordres, qui c'nstitue le programme, nous constatons de plus que chacun d'eux, mêra dans les machines les plus élaborées, n'exécute qu'une action très élémentaire, de sorte que toute activité significative exige l', icution d'un grand nombre de ces ordres. C'est pourquoi, presque dès l'orị̧ine du calcul automatique, il est apparu nécessaire de compléter la machine, le hardware pour employer le. langage familier des américains, par une cécle de programes écrits par des spéc11 listes, grâce auxquels la mise en oeuvre deviendra plus aisée.",No text,"Si nous analysons plus finement la suite de ces ordres, qui constitue le programme, nous constatons de plus que chacun d'eux, mêne dans les machines les plus élaborées, n'exécute qu'une action très élémentaire, de sorte que toute activité significative exige l'exécution d'un grand nombre de ces ordres. C'est pourquoi, presque dès l'origine du calcul automatique, il est apparu nécessaire de compléter la machine: le hardware pour employer le langage familier des américains, par une série de programmes écrits par des spécialistes, grâce auxquels la mise en œuvre deviendra plus aisée.",No text,"Voici le texte corrigé :
+
+""Si nous analysons plus finement la suite de ces ordres, qui constitue le programme, nous constatons de plus que chacun d'eux, même dans les machines les plus élaborées, n'exécute qu'une action très élémentaire, de sorte que toute activité significative exige l'exécution d'un grand nombre de ces ordres. C'est pourquoi, presque dès l'origine du calcul automatique, il est apparu nécessaire de compléter la machine, le hardware pour employer le langage familier des Américains, par une cercle de programmes écrits par des spécialistes, grâce auxquels la mise en oeuvre deviendra plus aisée.""
+
+J'ai corrigé les erreurs suivantes :
+
+* ""c'nstitue"" -> ""constitue""
+* ""méra"" -> ""même""
+* ""icution"" -> ""exécution""
+* ""orị̧ine"" -> ""origine""
+* ""cec̀le"" -> ""cercle""
+* ""spéc11 listes"" -> ""spécialistes""
+* ""q'ètait"" n'était pas présent mais ""le. langage"" -> ""le langage"" 
+* ""l', icution"" -> ""l'exécution""",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_33,"Voici le texte corrigé :
+
+""Si nous analysons plus finement la suite de ces ordres, qui constitue le programme, nous constatons de plus que chacun d'eux, même dans les machines les plus élaborées, n'exécute qu'une action très élémentaire, de sorte que toute activité significative exige l'exécution d'un grand nombre de ces ordres. C'est pourquoi, presque dès l'origine du calcul automatique, il est apparu nécessaire de compléter la machine, le hardware pour employer le langage familier des Américains, par une cercle de programmes écrits par des spécialistes, grâce auxquels la mise en oeuvre deviendra plus aisée.""
+
+J'ai corrigé les erreurs suivantes :
+
+* ""c'nstitue"" -> ""constitue""
+* ""méra"" -> ""même""
+* ""icution"" -> ""exécution""
+* ""orị̧ine"" -> ""origine""
+* ""cec̀le"" -> ""cercle""
+* ""spéc11 listes"" -> ""spécialistes""
+* ""q'ètait"" n'était pas présent mais ""le. langage"" -> ""le langage""",PRED-TEXT-TRUNCATED|,0.967741935483871,0.6331877729257642,-0.3457059679767103,80-99%,0.6575963718820862,-0.3204837490551776,-0.3457059679767103,-0.3204837490551776,0.967741935483871,Negative Improvement
+34,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3016.txt,fr,AN-lines,"Moyennant ces programnes, qui constituent le ""software"", par une astuce de langage dont aucun bon équivalent français n'a encore été trouvé, l'utilisateur moyen, peu soucieux de la structure interne de son équipement, est néc. : : en mesure de lui faire exécuter des tâches extrêmement complexes qu'il lui définit en quelques mots simples.",No text,"Moyennant ces programmes, qui constituent le ""software"", par une astuce de langage dont aucun bon équivalent français n'a encore été trouvé, l'utilisateur moyen, peu soucieux de la structure interne de son équipement, est né @tache@ en mesure de lui faire exécuter des tâches extrêmement complexes qu'il lui définit en quelques mots simples.",No text,"Voici le texte corrigé :
+
+Moyennant ces programmes, qui constituent le ""software"", par une astuce de langage dont aucun bon équivalent français n'a encore été trouvé, l'utilisateur moyen, peu soucieux de la structure interne de son équipement, est en mesure de lui faire exécuter des tâches extrêmement complexes qu'il lui définit en quelques mots simples.
+
+J'ai corrigé les erreurs suivantes :
+
+* ""programnes"" -> ""programmes""
+* ""néc."" -> ""en""
+* ""exécuter"" au lieu de ""exécuter des tâches"" je suppose que c'est une bonne correction mais je ne suis pas sûre 
+* ""qu'il lui définit"" semble correct mais je change ""lui"" par ""leur"" pour verifier 
+* ""rn"" n'apparait pas mais  ""q'ètait"" est remplacé par ""qu'il"" ou ""que"" pour  ""que"" 
+La correction donne 
+
+Moyennant ces programmes, qui constituent le ""software"", par une astuce de langage dont aucun bon équivalent français n'a encore été trouvé, l'utilisateur moyen, peu soucieux de la structure interne de son équipement, est en mesure de lui faire exécuter des tâches extrêmement complexes qu'il lui définit en quelques mots simples.",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_34,"Voici le texte corrigé :
+
+Moyennant ces programmes, qui constituent le ""software"", par une astuce de langage dont aucun bon équivalent français n'a encore été trouvé, l'utilisateur moyen, peu soucieux de la structure interne de son équipement, est en mesure de lui faire exécuter des tâches extrêmement complexes qu'il lui définit en quelques mots simples.
+
+J'ai corrigé les erreurs suivantes :
+
+* ""programnes"" -> ""programmes""
+* ""néc."" -> ""en""
+* ""exécuter"" au lieu de ""exécuter des tâches"" je suppose que c'e",PRED-TEXT-TRUNCATED|,0.9736070381231672,0.31417979610750696,-0.6773032817088558,80-99%,0.6279527559055118,-0.3550244284223508,-0.6773032817088558,-0.3550244284223508,0.9736070381231672,Negative Improvement
+35,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3016.txt,fr,AN-lines,Nous aurons à distinguer deux sortes de software :,No text,Nous aurons à distinguer deux sortes de software :,No text,Nous aurons à distinguer deux sortes de logiciels :,meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_35,Nous aurons à distinguer deux sortes de logiciels :,NONE,1.0,0.8431372549019608,-0.1568627450980392,99-100%,0.8431372549019608,-0.1568627450980392,-0.1568627450980392,-0.1568627450980392,1.0,Negative Improvement
+36,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3016.txt,fr,AN-lines,"1) le software de base, à l'aide duquel on fait disparaître, pour l'usager les incomodités naturelles de l'équipement. Nantie de son software de base, la machine eccepte ses ordres élémentaires sous une forme directement compréhensible à l'home, et la procédure d'introduction du programme dans la mémoire devient aisée sinon naturelle. Les résultats qu'elle délivre $i$... de même convenablement présentés, et rédigér an langage clair. Enfin, l'exécution du travail est organisée de manière à réduire les temps morts, qui équivalent à des pertes d'argent.",No text,"1. ﻿﻿﻿le software de base, à l'aide duquel on fait disparaître, pour l'usager les incommodités naturelles de l'équipement. Nantie de son software de base, la machine accepte ses ordres élémentaires sous une forme directement compréhensible à l'homme, et la procèdure d'introduction du programme dans la mémoire devient aisée sinon naturelle. Les résultats qu'elle délivre @tache@ de même convenablement présentés, et rédigés en langage clair. Enfin, l'exécution du travail est organisée de manière à réduire les temps morts, qui équivalent à des pertes d'argent.",No text,"Voici le texte corrigé :
+
+""1) Le logiciel de base, à l'aide duquel on fait disparaître, pour l'usager, les inconvénients naturels de l'équipement. Nantie de son logiciel de base, la machine accepte ses ordres élémentaires sous une forme directement compréhensible par l'homme, et la procédure d'introduction du programme dans la mémoire devient aisée, sinon naturelle. Les résultats qu'elle délivre sont, de même, convenablement présentés, et rédigés en langage clair. Enfin, l'exécution du travail est organisée de manière à réduire les temps morts, qui équivalent à des pertes d'argent.""
+
+J'ai corrigé les erreurs suivantes :
+
+* ""software"" -> ""logiciel""
+* ""incomodités"" -> ""inconvénients""
+* ""eccepte"" -> ""accepte""
+* ""rédigér"" -> ""rédigés""
+* ""an"" -> ""en""
+* quelques erreurs de ponctuation et de syntaxe pour améliorer la fluidité du texte.",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_36,"Voici le texte corrigé :
+
+""1) Le logiciel de base, à l'aide duquel on fait disparaître, pour l'usager, les inconvénients naturels de l'équipement. Nantie de son logiciel de base, la machine accepte ses ordres élémentaires sous une forme directement compréhensible par l'homme, et la procédure d'introduction du programme dans la mémoire devient aisée, sinon naturelle. Les résultats qu'elle délivre sont, de même, convenablement présentés, et rédigés en langage clair. Enfin, l'exécution du travail est organisée de manière à réduire les temps morts, qui équivalent à des pertes d'argent.""
+
+J'ai corrigé les erreurs suivantes :
+
+* ""software"" -> ""logiciel""
+* ""incomodités"" -> ""inconvénients""
+* ""eccepte"" -> ""accepte""
+* ""rédigér"" -> ""rédigés""
+* ""an"" -> ""en""
+* quelques erreurs de ponctuation et de syntaxe pour améliorer la fluidité du",PRED-TEXT-TRUNCATED|,0.9697508896797153,0.6226190476190476,-0.3579598077763216,80-99%,0.6278511404561825,-0.35256451204334943,-0.3579598077763216,-0.35256451204334943,0.9697508896797153,Negative Improvement
+37,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3016.txt,fr,AN-lines,"2) le software d'application, spécialement conçu pour faciliter plus particulièrement tel - tel usage de la machine, en dispensant l'exploitant de réfléchir à la méthode de résolution des, problèmes de routine, propres à cette application, pour se concentrer sur les cas particuliers.",No text,"2. ﻿﻿﻿le software d'application, spécialement conçu pour faciliter plus particulièrement tel tel usage de la machine, en dispensant l'exploitant de réfléchir à la méthode de résolution des, problèmes de routine, propres à cette application, pour se concentrer sur les cas particuliers.",No text,"Voici le texte corrigé :
+
+""2) Le logiciel d'application, spécialement conçu pour faciliter plus particulièrement tel ou tel usage de la machine, en dispensant l'exploitant de réfléchir à la méthode de résolution des problèmes de routine, propres à cette application, pour se concentrer sur les cas particuliers.""",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_37,"Voici le texte corrigé :
+
+""2) Le logiciel d'application, spécialement conçu pour faciliter plus particulièrement tel ou tel usage de la machine, en dispensant l'exploitant de réfléchir à la méthode de résolution des problèmes de routine, propres à cette application, pour se concentrer sur les cas particuliers.",NONE,0.9789473684210527,0.8717948717948718,-0.1094568513923353,80-99%,0.8745980707395499,-0.10659336859938458,-0.1094568513923353,-0.10659336859938458,0.9789473684210527,Negative Improvement
+38,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3017.txt,fr,AN-lines,"Avant d'entrer dans le détail des éléments qui composent un software de base, un point important doit être mis en évidence. Puisque ce qui interesse en définitive le client, c'est le service représenté par la somme hardware + software de base, il est indifférent que cette somme soit réalisée d'une façon ou d'une autre.",No text,"Avant d'entrer dans le détail des éléments qui composent un software de base, un point important doit être mis en évidence. Puisque ce qui intéresse en définitive le client, c'est le service représenté par la somme hardware + software de base, il est indifférent que cette somme soit réalisée d'une façon ou d'une autre.",No text,"Voici le texte corrigé :
+
+Avant d'entrer dans le détail des éléments qui composent un logiciel de base, un point important doit être mis en évidence. Puisque ce qui intéresse en définitive le client, c'est le service représenté par la somme hardware + logiciel de base, il est indifférent que cette somme soit réalisée d'une façon ou d'une autre.
+
+J'ai corrigé les erreurs suivantes :
+- ""software"" -> ""logiciel""
+- ""intéresse"" (manque un accent)
+- ""définitive"" -> ""définitivement"" n'était pas nécessaire mais ""en définitive"" est plus approprié 
+- ""un point important"" était bien présent mais je n'ai pas modifié ""important"" en rien d'autre.",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_38,"Voici le texte corrigé :
+
+Avant d'entrer dans le détail des éléments qui composent un logiciel de base, un point important doit être mis en évidence. Puisque ce qui intéresse en définitive le client, c'est le service représenté par la somme hardware + logiciel de base, il est indifférent que cette somme soit réalisée d'une façon ou d'une autre.
+
+J'ai corrigé les erreurs suivantes :
+- ""software"" -> ""logiciel""
+- ""intéresse"" (manque un accent)
+- ""définitive"" -> ""définitivement""",PRED-TEXT-TRUNCATED|,0.996875,0.4788732394366197,-0.5196255905337983,99-100%,0.6388308977035491,-0.35916649760145547,-0.5196255905337983,-0.35916649760145547,0.996875,Negative Improvement
+39,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3017.txt,fr,AN-lines,"De fait, il y a une infinité de manières de réaliser un même software de base sur une même machine, ce qui souligne combien le software est, encore aujourd' hui, un art. Il est, en outre, possible de fournir le même software de base,le même service si l'on veut, avec des hardware différents (notion de comptabilité) et de mettre plus ou moins l'accent à cette occasion sur l'économie ou sur le temps d'exécution. Il n'y a donc pas lieu de s'étonner que des clients ayant les mêmes problèmes et utilisant les mêmes langages de programmation puissent aboutir à des conclusions différentes quant au calculateur qui résoudre, de manière optimale, leur problème particulier.",No text,"De fait, il y a une infinité de manières de réaliser un même software de base sur une même machine, ce qui souligne combien le software est, encore aujourd'hui, un art. Il est, en outre, possible de fournir le même software de base, le même service si l'on veut, avec des hardware différents (notion de comptabilité) et de mettre plus ou moins l'accent à cette occasion sur l'économie ou sur le temps d'exécution. Il n'y a donc pas lieu de s'étonner que des clients ayant les mêmes problèmes et utilisant les mêmes langages de programmation puissent aboutir à des conclusions différentes quant au calculateur qui résoudra, de manière optimale, leur problème particulier.",No text,"Voici le texte corrigé :
+
+De fait, il y a une infinité de manières de réaliser un même logiciel de base sur une même machine, ce qui souligne combien le logiciel est, encore aujourd'hui, un art. Il est, en outre, possible de fournir le même logiciel de base, le même service si l'on veut, avec des matériels différents (notion de compatibilité) et de mettre plus ou moins l'accent à cette occasion sur l'économie ou sur le temps d'exécution. Il n'y a donc pas lieu de s'étonner que des clients ayant les mêmes problèmes et utilisant les mêmes langages de programmation puissent aboutir à des conclusions différentes quant au calculateur qui résout, de manière optimale, leur problème particulier.
+
+J'ai corrigé les erreurs suivantes :
+
+* ""software"" -> ""logiciel""
+* ""hardware"" -> ""matériels""
+* ""comptabilité"" -> ""compatibilité"" 
+* ""q'ètait"" n'était pas présent mais ""résoudre"" était orthographié ""résoudre,"" -> rien 
+* Diverses autres erreurs d'OCR (ponctuation, espaces)",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_39,"Voici le texte corrigé :
+
+De fait, il y a une infinité de manières de réaliser un même logiciel de base sur une même machine, ce qui souligne combien le logiciel est, encore aujourd'hui, un art. Il est, en outre, possible de fournir le même logiciel de base, le même service si l'on veut, avec des matériels différents (notion de compatibilité) et de mettre plus ou moins l'accent à cette occasion sur l'économie ou sur le temps d'exécution. Il n'y a donc pas lieu de s'étonner que des clients ayant les mêmes problèmes et utilisant les mêmes langages de programmation puissent aboutir à des conclusions différentes quant au calculateur qui résout, de manière optimale, leur problème particulier.
+
+J'ai corrigé les erreurs suivantes :
+
+* ""software"" -> ""logiciel""
+* ""hardware"" -> ""matériels""
+* ""comptabilité"" -> ""compatibilité"" 
+* ""q'ètait"" n'était pas présent mais ""résoudre"" était orthographié ""résoudre,"" -> rien 
+* Diverses autres erreurs d'OCR (ponctuation, espaces)",NONE,0.9955223880597015,0.6556701030927835,-0.3413808559637707,99-100%,0.6556701030927835,-0.3413808559637707,-0.3413808559637707,-0.3413808559637707,0.9955223880597015,Negative Improvement
+40,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3017.txt,fr,AN-lines,"Voyons maintenant la composition du software de base. Nous distingu-
+
+- l'assembleu-, programme permettant de parler commodément à la machine dans son propre langage, au prix d'une bonne connaissance de sa structure interne.",No text,"Voyons maintenant la composition du software de base. Nous distinguerons :
+
+- l'assembleur , programme permettant de parler commodément à la machine dans son propre langage, au prix d'une bonne connaissance de sa structure interne.",No text,"Voici le texte corrigé :
+
+""Voyons maintenant la composition du logiciel de base. Nous distinguons 
+- l'assembleur, programme permettant de parler commodément à la machine dans son propre langage, au prix d'une bonne connaissance de sa structure interne.""",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_40,"Voici le texte corrigé :
+
+""Voyons maintenant la composition du logiciel de base. Nous distinguons 
+- l'assembleur, programme permettant de parler commodément à la machine dans son propre langage, au prix d'une bonne connaissance de sa structure interne.",NONE,0.961038961038961,0.84251968503937,-0.12332411151308793,80-99%,0.8458498023715415,-0.11985898942420681,-0.12332411151308793,-0.11985898942420681,0.961038961038961,Negative Improvement
+41,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3016.txt,fr,AN-lines,"# Introduction 
+
+Un calculateur est un assemblage technolog:que très remarqua:te, mais il est, comme tout autre 'équipement, absolument sans valeur sans un mode d'emploi. Lorsqu'on essaie de préciser ce mode, au niveau qui convient d'habitudó pour d'autres machines, (boutons, lampes témoins, manettes) on s'aperçoit que la description la plus minutieuse est impuissante à pernetire une mise en oeuvre efficace du plus modeste calculateur. Et cela pour uis raison bien simple, c'est que le travail utile du calculateur résulte d'ordres",No text,"Introduction
+Un calculateur est un assemblage technologique très remarquable, mais il est, comme tout autre équipement, absolument sans valeur sans un mode d'emploi. Lorsqu'on essaie de préciser ce mode, au niveau qui convient d'habitude pour d'autres machines, (boutons, lampes témoins, manettes) on s'aperçoit que la description la plus minutieuse est impuissante à permettre une mise en oeuvre efficace du plus modeste calculateur. Et cela pour une raison bien simple, c'est que le travail utile du calculateur résulte d'ordres",No text,"Voici le texte corrigé :
+
+# Introduction 
+
+Un calculateur est un assemblage technologique très remarquable, mais il est, comme tout autre équipement, absolument sans valeur sans un mode d'emploi. Lorsqu'on essaie de préciser ce mode, au niveau qui convient d'habitude pour d'autres machines, (boutons, lampes témoins, manettes) on s'aperçoit que la description la plus minutieuse est impuissante à permettre une mise en œuvre efficace du plus modeste calculateur. Et cela pour une raison bien simple, c'est que le travail utile du calculateur résulte d'ordres",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_41,"Voici le texte corrigé :
+
+# Introduction 
+
+Un calculateur est un assemblage technologique très remarquable, mais il est, comme tout autre équipement, absolument sans valeur sans un mode d'emploi. Lorsqu'on essaie de préciser ce mode, au niveau qui convient d'habitude pour d'autres machines, (boutons, lampes témoins, manettes) on s'aperçoit que la description la plus minutieuse est impuissante à permettre une mise en œuvre efficace du plus modeste calculateur. Et cela pour une raison bien simple, c'est que le travail utile du calculateur résulte d'ordres",NONE,0.9757009345794393,0.9427549194991055,-0.03376650970877122,80-99%,0.9427549194991055,-0.03376650970877122,-0.03376650970877122,-0.03376650970877122,0.9757009345794393,Negative Improvement
+42,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3016.txt,fr,AN-lines,"- qui s'éxécutent à vitesse électronique, mais",No text,"- qui s'éxécutent à vitesse électronique, mais",No text,"Voici le texte corrigé :
+
+- qui s'exécutent à vitesse électronique, mais
+
+J'ai identifié les erreurs suivantes :
+- ""s'éxécutent"" -> ""s'exécutent"" (erreur de reconnaissance de caractères spéciaux)
+- Aucune autre erreur n'a été détectée.
+
+Le texte corrigé est donc :
+
+- qui s'exécutent à vitesse électronique, mais",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_42,"Voici le texte corrigé :
+
+- qui s'exécutent à vitesse électronique, m",PRED-TEXT-TRUNCATED|,1.0,0.14743589743589744,-0.8525641025641025,99-100%,0.5652173913043478,-0.4347826086956522,-0.8525641025641025,-0.4347826086956522,1.0,Negative Improvement
+43,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3016.txt,fr,AN-lines,"- qui ont da pour cela être intrc'ults dans un dispositif spécial de la machina, la mémoire de programme, et",No text,"- ﻿﻿qui ont du pour cela être introduits dans un dispositif spécial de la machine, la mémoire de programme, et",No text,"Voici le texte corrigé :
+
+""qui ont dû pour cela être inscrits dans un dispositif spécial de la machine, la mémoire de programme, et""
+
+J'ai corrigé les erreurs suivantes :
+
+* ""da"" -> ""dû""
+* ""intc'ults"" -> ""inscrits""
+* ""machina"" -> ""machine""",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_43,"Voici le texte corrigé :
+
+""qui ont dû pour cela être inscrits dans un dispositif spécial de la machine, la mémoire de programme, et""
+
+J'ai corrigé les erreurs sui",PRED-TEXT-TRUNCATED|,0.9363636363636364,0.41422594142259417,-0.5576227810049965,80-99%,0.6111111111111112,-0.3473570658036677,-0.5576227810049965,-0.3473570658036677,0.9363636363636364,Negative Improvement
+44,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3016.txt,fr,AN-lines,"- qui sont malheureusement rédigés, dans cette mémoire, sous une forma particulièrement ésotérique.",No text,"- ﻿﻿qui sont malheureusement rédigés, dans cette mémoire, sous une forme particulièrement ésotérique.",No text,"Le texte fourni est déjà correct :
+
+""qui sont malheureusement rédigés, dans cette mémoire, sous une forme particulièrement ésotérique."" 
+
+Je n'ai relevé aucune erreur d'OCR dans cette phrase. La sortie est donc identique à l'entrée.",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_44,"Le texte fourni est déjà correct :
+
+""qui sont malheureusement rédigés, dans cette mémoire, sous une forme particulièrement ésotérique."" 
+
+Je n'ai re",PRED-TEXT-TRUNCATED|,0.9702970297029703,0.4224137931034483,-0.564655172413793,80-99%,0.6621621621621622,-0.31756756756756754,-0.564655172413793,-0.31756756756756754,0.9702970297029703,Negative Improvement
+45,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3016.txt,fr,AN-lines,"De plus, si nous partons d'une machine absolument vide, l'intro-duction deces ordres, supposés rédigés, dans la machine, est une opération extrêmement longue et fastidieuse, qu'il est pratiquement impossible d'enécuter sans des dixaines d'erreurs.",No text,"De plus, si nous partons d'une machine absolument vide, l'introduction de ces ordres, supposés rédigés, dans la machine, est une opération extrêmement longue et fastidieuse, qu'il est pratiquement impossible d'exécuter sans des dizaines d'erreurs.",No text,"Voici le texte corrigé :
+
+""De plus, si nous partons d'une machine absolument vide, l'introduction de ces ordres, supposés rédigés, dans la machine, est une opération extrêmement longue et fastidieuse, qu'il est pratiquement impossible d'exécuter sans des dizaines d'erreurs.""
+
+J'ai corrigé les erreurs suivantes :
+
+* ""ces"" -> ""ces"" (rien à changer, mais je me suis assuré que c'était correct)
+* ""dixaines"" -> ""dizaines"" 
+* ""enécuter"" -> ""exécuter""
+* ""ordres"" était bien présent mais ""deces"" -> ""de ces"" 
+* ""resopnsbile"" n'était pas présent mais  ""absolument"" était bien présent ainsi que ""qu'il""",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_45,"Voici le texte corrigé :
+
+""De plus, si nous partons d'une machine absolument vide, l'introduction de ces ordres, supposés rédigés, dans la machine, est une opération extrêmement longue et fastidieuse, qu'il est pratiquement impossible d'exécuter sans des dizaines d'erreurs.""
+
+J'ai corrigé les erreurs suivantes :
+
+* ""ces"" -> ""ces"" (rien à changer, mais je me suis assur",PRED-TEXT-TRUNCATED|,0.9838056680161943,0.4151260504201681,-0.5780405989556316,80-99%,0.6675675675675675,-0.32144366588811035,-0.5780405989556316,-0.32144366588811035,0.9838056680161943,Negative Improvement
+46,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3016.txt,fr,AN-lines,"Si nous analysons plus finement la suite de ces ordres, qui c'nstitue le programme, nous constatons de plus que chacun d'eux, mêra dans les machines les plus élaborées, n'exécute qu'une action très élémentaire, de sorte que toute activité significative exige l', icution d'un grand nombre de ces ordres. C'est pourquoi, presque dès l'orị̧ine du calcul automatique, il est apparu nécessaire de compléter la machine, le hardware pour employer le. langage familier des américains, par une cécle de programes écrits par des spéc11 listes, grâce auxquels la mise en oeuvre deviendra plus aisée.",No text,"Si nous analysons plus finement la suite de ces ordres, qui constitue le programme, nous constatons de plus que chacun d'eux, mêne dans les machines les plus élaborées, n'exécute qu'une action très élémentaire, de sorte que toute activité significative exige l'exécution d'un grand nombre de ces ordres. C'est pourquoi, presque dès l'origine du calcul automatique, il est apparu nécessaire de compléter la machine: le hardware pour employer le langage familier des américains, par une série de programmes écrits par des spécialistes, grâce auxquels la mise en œuvre deviendra plus aisée.",No text,"Voici le texte corrigé :
+
+""Si nous analysons plus finement la suite de ces ordres, qui constitue le programme, nous constatons de plus que chacun d'eux, même dans les machines les plus élaborées, n'exécute qu'une action très élémentaire, de sorte que toute activité significative exige l'exécution d'un grand nombre de ces ordres. C'est pourquoi, presque dès l'origine du calcul automatique, il est apparu nécessaire de compléter la machine, le hardware pour employer le langage familier des Américains, par une cercle de programmes écrits par des spécialistes, grâce auxquels la mise en oeuvre deviendra plus aisée.""
+
+J'ai corrigé les erreurs suivantes :
+
+* ""c'nstitue"" -> ""constitue""
+* ""méra"" -> ""même""
+* ""icution"" -> ""exécution"" (mais je pense que c'était plutôt ""écution"" qui était attendu, en tous cas c'est plus probable)
+* ""orị̧ine"" -> ""origine""
+* ""cecIe"" -> ""cercle""
+* ""spéc11 listes"" -> ""spécialistes""
+* ""q'ètait"" n'était pas présent mais ""le. langage"" -> ""le langage"" 
+
+Note : J'ai essayé de rester le plus proche possible du texte d'origine tout en corrigeant les erreurs évidentes. Si certaines corrections semblent incertaines, merci de me signaler les ambigüités.",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_46,"Voici le texte corrigé :
+
+""Si nous analysons plus finement la suite de ces ordres, qui constitue le programme, nous constatons de plus que chacun d'eux, même dans les machines les plus élaborées, n'exécute qu'une action très élémentaire, de sorte que toute activité significative exige l'exécution d'un grand nombre de ces ordres. C'est pourquoi, presque dès l'origine du calcul automatique, il est apparu nécessaire de compléter la machine, le hardware pour employer le langage familier des Américains, par une cercle de programmes écrits par des spécialistes, grâce auxquels la mise en oeuvre deviendra plus aisée.""
+
+J'ai corrigé les erreurs suivantes :
+
+* ""c'nstitue"" -> ""constitue""
+* ""méra"" -> ""même""
+* ""icution"" -> ""exécution"" (mais je pense que c'était plutôt ""écution"" qui était attendu, en tous cas c'est plus probable)
+* ""orị̧ine"" -> ""origine""
+* ""cecIe"" -> ""cercle""
+* ""spéc1",PRED-TEXT-TRUNCATED|,0.967741935483871,0.4927782497875956,-0.4907958085528179,80-99%,0.6568516421291053,-0.3212533031332579,-0.4907958085528179,-0.3212533031332579,0.967741935483871,Negative Improvement
+47,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3016.txt,fr,AN-lines,"Moyennant ces programnes, qui constituent le ""software"", par une astuce de langage dont aucun bon équivalent français n'a encore été trouvé, l'utilisateur moyen, peu soucieux de la structure interne de son équipement, est néc. : : en mesure de lui faire exécuter des tâches extrêmement complexes qu'il lui définit en quelques mots simples.",No text,"Moyennant ces programmes, qui constituent le ""software"", par une astuce de langage dont aucun bon équivalent français n'a encore été trouvé, l'utilisateur moyen, peu soucieux de la structure interne de son équipement, est né @tache@ en mesure de lui faire exécuter des tâches extrêmement complexes qu'il lui définit en quelques mots simples.",No text,"Voici le texte corrigé :
+
+Moyennant ces programmes, qui constituent le ""software"", par une astuce de langage dont aucun bon équivalent français n'a encore été trouvé, l'utilisateur moyen, peu soucieux de la structure interne de son équipement, est en mesure de lui faire exécuter des tâches extrêmement complexes qu'il lui définit en quelques mots simples.
+
+J'ai corrigé les erreurs suivantes :
+
+* ""programnes"" -> ""programmes""
+* ""néc."" -> ""en""
+* ""exécuter"" au lieu de ""exécuter des tâches"" je me doutais que c'était ""exécuter"" mais sans ""des"" 
+* ""q"" n'était pas présent mais  ""qui"" était bien présent ainsi que ""en"" était bien présent mais ""des"" était manquant 
+* ""soucieux"" -> ""soucieux"" mais c'était ""peu soucieux"" donc cela reste ""peu soucieux""",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_47,"Voici le texte corrigé :
+
+Moyennant ces programmes, qui constituent le ""software"", par une astuce de langage dont aucun bon équivalent français n'a encore été trouvé, l'utilisateur moyen, peu soucieux de la structure interne de son équipement, est en mesure de lui faire exécuter des tâches extrêmement complexes qu'il lui définit en quelques mots simples.
+
+J'ai corrigé les erreurs suivantes :
+
+* ""programnes"" -> ""programmes""
+* ""néc."" -> ""en""
+* ""exécuter"" au lieu de ""exécuter des tâches"" je me doutais que",PRED-TEXT-TRUNCATED|,0.9736070381231672,0.42704149933065594,-0.5613820744826696,80-99%,0.6291913214990138,-0.35375228725553104,-0.5613820744826696,-0.35375228725553104,0.9736070381231672,Negative Improvement
+48,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3016.txt,fr,AN-lines,Nous aurons à distinguer deux sortes de software :,No text,Nous aurons à distinguer deux sortes de software :,No text,Nous aurons à distinguer deux sortes de logiciels :,meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_48,Nous aurons à distinguer deux sortes de logiciels :,NONE,1.0,0.8431372549019608,-0.1568627450980392,99-100%,0.8431372549019608,-0.1568627450980392,-0.1568627450980392,-0.1568627450980392,1.0,Negative Improvement
+49,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3016.txt,fr,AN-lines,"1) le software de base, à l'aide duquel on fait disparaître, pour l'usager les incomodités naturelles de l'équipement. Nantie de son software de base, la machine eccepte ses ordres élémentaires sous une forme directement compréhensible à l'home, et la procédure d'introduction du programme dans la mémoire devient aisée sinon naturelle. Les résultats qu'elle délivre $i$... de même convenablement présentés, et rédigér an langage clair. Enfin, l'exécution du travail est organisée de manière à réduire les temps morts, qui équivalent à des pertes d'argent.",No text,"1. ﻿﻿﻿le software de base, à l'aide duquel on fait disparaître, pour l'usager les incommodités naturelles de l'équipement. Nantie de son software de base, la machine accepte ses ordres élémentaires sous une forme directement compréhensible à l'homme, et la procèdure d'introduction du programme dans la mémoire devient aisée sinon naturelle. Les résultats qu'elle délivre @tache@ de même convenablement présentés, et rédigés en langage clair. Enfin, l'exécution du travail est organisée de manière à réduire les temps morts, qui équivalent à des pertes d'argent.",No text,"Voici le texte corrigé :
+
+""1) Le logiciel de base, à l'aide duquel on fait disparaître, pour l'usager, les inconvénients naturels de l'équipement. Nantie de son logiciel de base, la machine accepte ses ordres élémentaires sous une forme directement compréhensible par l'homme, et la procédure d'introduction du programme dans la mémoire devient aisée, sinon naturelle. Les résultats qu'elle délivre sont, de même, convenablement présentés, et rédigés en langage clair. Enfin, l'exécution du travail est organisée de manière à réduire les temps morts, qui équivalent à des pertes d'argent.""
+
+J'ai corrigé les erreurs suivantes :
+
+* ""software"" -> ""logiciel""
+* ""incomodités"" -> ""inconvénients""
+* ""eccepte"" -> ""accepte""
+* ""rédigér"" -> ""rédigés"" (mais il y avait un ""s"" à ""résultats"" qui faisait penser à un accord, j'ai donc supposé que c'était ""rédigés"" au lieu de ""rédigér"")
+* ""à l'aide duquel"" est bien présent
+* J'ai ajouté un ""s"" à ""résultats"" pour obtenir ""Les résultats""
+* ""délivre"" n'était pas présent mais $i$... a été supprimé car cela n'avait pas de sens. 
+
+Le reste du texte est intact.",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_49,"Voici le texte corrigé :
+
+""1) Le logiciel de base, à l'aide duquel on fait disparaître, pour l'usager, les inconvénients naturels de l'équipement. Nantie de son logiciel de base, la machine accepte ses ordres élémentaires sous une forme directement compréhensible par l'homme, et la procédure d'introduction du programme dans la mémoire devient aisée, sinon naturelle. Les résultats qu'elle délivre sont, de même, convenablement présentés, et rédigés en langage clair. Enfin, l'exécution du travail est organisée de manière à réduire les temps morts, qui équivalent à des pertes d'argent.""
+
+J'ai corrigé les erreurs suivantes :
+
+* ""software"" -> ""logiciel""
+* ""incomodités"" -> ""inconvénients""
+* ""eccepte"" -> ""accepte""
+* ""rédigér"" -> ""rédigés"" (mais il y avait un ""s"" à ""résultats"" qui faisait penser à un accord, j'ai donc supposé que c",PRED-TEXT-TRUNCATED|,0.9697508896797153,0.4780621572212066,-0.5070258121865723,80-99%,0.6270983213429256,-0.353340813587662,-0.5070258121865723,-0.353340813587662,0.9697508896797153,Negative Improvement
+50,../data/datasets/ocr/original/AN/OCR_AN_19810642_13_3016.txt,fr,AN-lines,"2) le software d'application, spécialement conçu pour faciliter plus particulièrement tel - tel usage de la machine, en dispensant l'exploitant de réfléchir à la méthode de résolution des, problèmes de routine, propres à cette application, pour se concentrer sur les cas particuliers.",No text,"2. ﻿﻿﻿le software d'application, spécialement conçu pour faciliter plus particulièrement tel tel usage de la machine, en dispensant l'exploitant de réfléchir à la méthode de résolution des, problèmes de routine, propres à cette application, pour se concentrer sur les cas particuliers.",No text,"Voici le texte corrigé :
+
+""2) Le logiciel d'application, spécialement conçu pour faciliter plus particulièrement tel ou tel usage de la machine, en dispensant l'exploitant de réfléchir à la méthode de résolution des problèmes de routine, propres à cette application, pour se concentrer sur les cas particuliers.""
+
+J'ai corrigé les erreurs suivantes :
+
+* ""software"" -> ""logiciel""
+* ""d'application, spécialement"" -> ajout d'une virgule pour améliorer la lisibilité
+* ""tel - tel"" -> ""tel ou tel"" 
+* ""propres à cette application, pour"" -> ajout d'une virgule pour améliorer la lisibilité 
+
+Note : J'ai veillé à rester le plus proche possible du texte d'origine tout en corrigeant les erreurs introduites par l'OCR.",meta-llama-llama-4-scout-17b-16e-instruct-temp0.7,prompt_basic_01,prompt_basic_01,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl,results-AN_lines-meta-llama-llama-4-scout-17b-16e-instruct-temp0.7.jsonl_50,"Voici le texte corrigé :
+
+""2) Le logiciel d'application, spécialement conçu pour faciliter plus particulièrement tel ou tel usage de la machine, en dispensant l'exploitant de réfléchir à la méthode de résolution des problèmes de routine, propres à cette application, pour se concentrer sur les cas particuliers.""
+
+J'ai corrigé les erreurs suivantes :
+
+* ""software"" -> ""logiciel""
+* ""d'application, spécialement"" -> ajout d'une",PRED-TEXT-TRUNCATED|,0.9789473684210527,0.38309859154929576,-0.6086627290625473,80-99%,0.64,-0.34623655913978496,-0.6086627290625473,-0.34623655913978496,0.9789473684210527,Negative Improvement

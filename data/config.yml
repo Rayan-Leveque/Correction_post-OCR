@@ -1,0 +1,35 @@
+models:
+  - deepseek/deepseek-v3-turbo:
+      - class: NovitaPrompt
+      - prompt: prompt_basic_02.txt
+      - num_generate: 1
+      
+  - meta-llama/llama-4-maverick-17b-128e-instruct-fp8:
+      - class: NovitaPrompt
+      - prompt: prompt_basic_02.txt
+      - num_generate: 1
+      
+  - meta-llama/llama-4-scout-17b-16e-instruct:
+      - class: NovitaPrompt
+      - prompt: prompt_basic_02.txt
+      - num_generate: 1
+
+  - google/gemma-3-27b-it:
+      - class: NovitaPrompt
+      - prompt: prompt_basic_02.txt
+      - num_generate: 1
+
+  - gpt-4.1:
+      - class: GPTPrompt
+      - prompt: prompt_basic_02.txt
+      - num_generate: 1
+
+  - gpt-4.1-mini:
+      - class: GPTPrompt
+      - prompt: prompt_basic_02.txt
+      - num_generate: 1
+
+  - gpt-3.5-turbo:
+      - class: GPTPrompt
+      - prompt: prompt_basic_02.txt
+      - num_generate: 1

@@ -1,0 +1,36 @@
+Transcris le texte océrisé suivant (extrait d'une numérisation par OCR), en corrigeant les erreurs introduites par le processus d'OCR. Assure-toi de corriger tous les mots mal interprétés en restant le plus possible proche de la forme syntaxique et lexicale du texte.
+
+# Étapes
+
+- Lis attentivement le texte pour identifier les erreurs courantes dues à l'OCR, telles que :  
+- Lettres mal reconnues (ex. "rn" interprété comme "m")  
+- Mauvaise segmentation des mots ou caractères spéciaux erronés  
+- Ne modifie pas le sens ou l'organisation de la phrase pour fluidifier la lecture  
+
+# Format de sortie
+
+Le texte transcrit correctement et sans erreurs dues aux problèmes d'OCR.  
+- Format normal de paragraphe.  
+- Utilise le même découpage en paragraphes que le texte original.  
+
+# Notes
+
+- Fais attention aux caractères spéciaux ou ponctuations qui peuvent avoir été mal interprétées par l'OCR.  
+- Ne rajoute pas de ...
+- Ne rajoute absolument pas de phrase au début ou à la fin du document
+- Don't add any words that is not from the input
+– Le texte fourni proviendra toujours de l’OCR.
+
+
+# Exemple
+
+Entrée :
+"Le secetariar générame du cnoseil q'ètait resopnsbile poru cela."
+
+Sortie :
+"Le secrétariat général du conseil était responsable pour cela."
+
+
+_____________________
+
+TEXTE : {{TEXT}}

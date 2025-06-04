@@ -1,0 +1,18 @@
+![img-0.jpeg](img-0.jpeg)
+<line>
+| 26 | 144 | : | C | 100 | : | CHA | A |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| 42 | 145 | i | A | 101 | i | ADD | B |
+| 20 | 146 | i | R | 102 | i | RAN | C |</line>
+
+<line>A gauche, nous :présentons la forme octale, qui n'est autre chose qu'une forme binaire condensée.</line>
+<line>Au centre, on montre la forme acceptable par des ordres initiaux, dont la complexité doit demeurer limitée, Le code est bref et pas toujours évocateur, les adresses sont décimales mais fixes. Le programmeur doit toujours faire choix de la position de son programme en mémoire, donc savoir à chaque instant ce que contient celle-ci.</line>
+<line>Dans la colonne de droite figure le programme rédigé en langage d'assemblage: codes parlants, adresses symboliques. C'est au traducteur qu'incombe la charges de localiser A, B et C s'il les rencontre à nouveau dans l'énoncé par la suite, et il doit conserver à cet effet un dictionnaire des symboles.</line>
+
+<line>De même on demandera à l'assembleur d'accepter des énoncés de constantes numériques ou alphanumériques, et d'en assurer la traduction; de réserver des zones de mémoire en vue de l'introduction des données ( à l'exécution) ; de préparer le programme assemblé en vue d'un logement en mémoire à partir d'une adresse imposée de l'extérieur. Les ordres correspondants rédigés par le programmeur et mêlés au programme, mais destinés à une exécution immédiate par l'assembleur, portent le nom de combinaisons de commande ou de pseudoonérations.</line>
+
+<line>Bien sûr, ces commodités nouvelles exigent de la place on-mémoire: l'assembleur ne peut plus coexister avec le programme objet, c'est-à-dire le résultat de son travail. Il est d'ailleurs anormal d'imposer des restrictions à la taille de ce dernier. Aussi peut-on demander à l'assembleur d'assumer trois tâches nouvelles :</line>
+
+<line>- segmentation du programme objet on fragments susceptibles de tenir en mémoire rapide.</line>
+<line>- rengement de ce programme objet dans une mémoire auxiliaire, beaucoup plus grande que la mémoire rapide, d'où il sera rappelé segment par segment au moment de l'exécution.</line>
+<line>- impression, à titre de compte rendu et sur demande, de la forme absolue du programme objet.</line>

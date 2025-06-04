@@ -1,0 +1,3 @@
+Corrige le texte suivant, ne rajoute absolument rien de superflu,  
+
+TEXTE : {{TEXT}}
